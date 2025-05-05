@@ -1,0 +1,57 @@
+model {
+	
+	extend lseng.appLayer.ai {
+
+		conversational-tools = container 'AI Conversational Tools' {
+		
+			coach = component 'Longevity Coach AI' {
+				#ai-conversational-tools
+				title 'Longevity Coach AI'
+				description '
+					IAI Virtual assistant offering personalized recommendations based on lifestyle and health profiles			'
+			
+			}
+
+			health-chatbot = component 'Health Literacy Chatbot' {
+				#ai-conversational-tools
+				title 'Health Literacy Chatbot'
+				description '
+					Conversational interface providing real-time education on medical, nutritional, and lifestyle topics
+				'
+			}
+
+			motivation = component 'Motivational Interviewing AI' {
+				#ai-conversational-tools
+				title 'Motivational Interviewing AI'
+				description '
+				daptive conversation agents using motivational interviewing techniques to strengthen commitment to behavioural change
+				'
+			}
+
+			moderator = component 'Community Moderator AI' {
+				#ai-conversational-tools
+				title 'Community Moderator AI'
+				description '
+				Automated social engagement facilitator, nurturing group discussions, challenges, and recognition mechanisms
+				'
+			}
+
+			behavioral-economics = component 'Behavioural Economics AI' {
+				#ai-conversational-tools
+				title 'Behavioural Economics AI'
+				description '
+				Embedding rewards framing, loss aversion techniques, and cost (financial, emotional, psychological) nudges directly into conversational exchanges to maximize behaviour change adherence
+				'
+			}
+
+			feedback = component 'Feedback Loop Integrator AI' {
+				#ai-conversational-tools
+				title 'Feedback Loop Integrator AI'
+				description '
+					Real-time data collector and analyzer, feeding back insights to users and dynamically adjusting intervention pathways
+				'
+			}
+		}
+
+	}
+}

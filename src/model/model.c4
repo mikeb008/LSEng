@@ -1,0 +1,174 @@
+model {
+	lseng = system 'LSEng LaaS' {
+		title 'LSEng LaaS (Longevity-as-a-Service)'
+		description 'Provides a platform for longevity & NCD risk management'
+
+		personas = container 'LSEng Personas' {
+			#longevity-diagnostic-tools
+			title 'Engagement layer'
+			icon https://img.icons8.com/?size=100&id=122809&format=png
+			description 'Delivers insights and actions via educational, coaching, community engagement, and gamified applications'
+			style {
+				opacity 45%
+			}
+			partricipant = person 'Partricipant' {
+				#longevity-diagnostic-tools, #personas
+				title 'Partricipant'
+				description 'Want to improve their health & longetvity'
+			}
+			clinician = person 'Clinician' {
+				#longevity-diagnostic-tools, #personas
+				title '
+					Provides linical biomarkers and biometric data 
+					(e.g., BMI, blood pressure, cholesterol, glucose,mental health scores etc.)
+				'
+				description 'Institutions providing Participant related clinical lab. Analysis e.g. Clicks, Dischem etc'
+				//-> lseng.appLayer.apps.hl7 'Submits Health data'
+				
+			}
+			custodian = person 'Custodian' {
+				#longevity-interventionTools, #personas
+				title 'Custodian/Client'
+				description '
+					Institutional user (managing longevity risk) e.g. Financial (Bank, Pension Fund, Insurance company), Health (Clinic, NHS, etc.)
+				'
+			}
+			coach = person 'Coach' {
+				#longevity-interventionTools, #personas
+				title 'Wellness coaches'
+				description 'AWellness coaches guiding users'
+			}
+			actuary = person 'Actuary' {
+				#longevity-interventionTools, #personas
+				title 'Actuary'
+				description 'Uses LOE for Risk Models'
+			}
+			
+		}
+
+		uiLayer = container 'Engagement Layer' {
+			title 'Provides User Interface for users'
+			description 'Provides Web, Mobile & Wearables Interaface to iusers'
+			icon tech:chrome
+			style {
+				opacity 45%
+			}
+
+			mobileApp = application 'Mobile Application' {
+				#longevity-diagnostic-tools
+				title 'Mobile Application'
+				description 'Provides mobile access for individuals'
+				technology 'ios, Android'
+				icon tech:android
+			}
+			webApp = application 'Web Application' {
+				#longevity-diagnostic-tools
+				title 'Web Application'
+				description 'Provides UI for users'
+				style {
+        			icon tech:chrome
+        			shape browser
+      			}
+      			technology 'React, Typescript'
+      		}
+      		wearables = application 'Wearable Devices' {
+				#longevity-interventionTools
+				title 'Wearable Devices'
+				description 'Devices that provide biometric & activity data'
+				tech:garmin
+			}
+		}
+
+		appLayer = container 'Application Layer' {
+			title 'Application Layer'
+			description 'Application Layer'
+			icon tech:java
+			style {
+				opacity 45%
+			}
+
+			apps = container 'Core Apps' {
+				title 'Core LSEng Apps'
+				description 'Core LSEng Applications'
+				icon tech:java
+
+			}
+			ai = container 'AI Apps' {
+				#ai-conversational-tools 
+				title 'AI Apps'
+				description 'Uses LLMs for narrative feedback, coaching, and intelligent conversations'
+				icon https://img.icons8.com/?size=128&id=nzIFTCUl0ZR8&format=png
+				
+			}
+			algos = container 'Algorithms' {
+				#ai-conversational-tools 
+				title 'Algorithms'
+				description 'Algorithms'
+				icon tech:the-algorithms  
+				
+			}
+		}
+
+		dataLayer = container 'Application Layer' {
+			#longevity-diagnostic-tools
+			title 'Data Layer'
+			description 'Data Layer'
+			icon https://img.icons8.com/?size=100&id=8305&format=png //tech:postgresql
+			style {
+				opacity 45%
+			}
+
+			db = database 'Data Store'{
+				#dataLayer, #longevity-diagnostic-tools
+				title 'Data Store'
+				icon tech:postgresql
+
+			}
+
+			datalake = database 'Data lake' {
+				#dataLayer, #longevity-diagnostic-tools
+				title 'Data Lake'
+				description 'Centralized storage for structured, semi-structured, and unstructured data'
+				icon https://img.icons8.com/?size=160&id=SyhP1mfNSqQs&format=png //tech:postgresql
+			}
+			blockchain = component 'Block Chain' {
+				#dataLayer, #longevity-interventionTools 
+				title 'Block Chain'
+				description 'Provides tamper-proof logs of consent, data provenance, and transactions.'
+				icon https://img.icons8.com/?size=100&id=84734&format=png 
+			}
+		}
+
+
+		middleware = container 'API Layer' {
+			#longevity-diagnostic-tools, #middleware
+			title 'API Layer'
+			description 'Middleare'
+			icon aws:api-gateway  //tech:postgresql
+			style {
+				opacity 45%
+			}
+
+			notificationService = component 'Notification Service' {
+				#middleware
+				title 'Notification Service'
+				description 'Handles user communication'
+				icon https://img.icons8.com/?size=100&id=7751&format=png
+			}
+		}
+
+	}
+
+	lseng.personas 	 -> lseng.uiLayer 
+	lseng.uiLayer 	 -> lseng.middleware 
+	lseng.middleware -> lseng.appLayer 
+	lseng.middleware -> lseng.dataLayer 
+}
+
+
+/*--------------------
+lseng.personas -> Container [Diagnostic Tools --> Intervention Tools (Triggers Interventions) -> AI Tools (Enhances Engagement)]
+Diagnostic Tools --> Data lake
+Diagnostic Tools --> Block Chain
+AI Tools -> lseng.personas
+---------------------*/

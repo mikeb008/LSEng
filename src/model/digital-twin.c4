@@ -1,0 +1,55 @@
+model {
+	
+	extend lseng.appLayer.apps.interventionTools.digitalTwin {
+
+		digitalTwinService = service 'Digital Twin Service' {
+			#longevity-interventionTools, #digitalTwin
+			title 'Digital Twin Service'
+			description 'Provides health simulations'
+			technology 'Python, Java'
+		}
+
+    	healthModel = service 'Health Model' {
+    		#longevity-interventionTools, #digitalTwin
+			title 'Health Model'
+    		description 'Simulates physiological processes'
+    		technology 'Python, ML'
+    	}
+
+    	dataAssimilation = service 'Data Assimilation' {
+    		#longevity-interventionTools, #digitalTwin
+			title 'Data Assimilation'
+    		description 'Integrates user data into the model'
+    		technology 'Python'
+    	}
+
+    	simulationEngine = service 'Simulation Engine' {
+    		#longevity-interventionTools, #digitalTwin
+			title 'Simulation Engine'
+    		description 'Runs health simulations'
+    		technology 'Python'
+    	}
+
+		predictionEngine = service 'Prediction Engine' {
+			#longevity-interventionTools, #digitalTwin
+			title 'Prediction Engine'
+			description 'Predicts future health outcomes'
+			technology 'Python, ML'
+		} 	
+
+    	visualizationModule = service 'Visualization Module' {
+    		#longevity-interventionTools, #digitalTwin
+			title 'Visualization Module'
+    		description 'Visualizes simulation results'
+    		technology 'JavaScript'
+    	}
+
+    	// REALTIONSHIPS
+    	healthModel 	 -> dataAssimilation 	'Uses data from'
+    	dataAssimilation -> simulationEngine 	'Provides data to'
+    	simulationEngine -> predictionEngine 	'Uses output from'
+    	predictionEngine -> visualizationModule 'Provides data to'
+
+	}
+
+}

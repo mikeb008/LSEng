@@ -1,0 +1,88 @@
+model {
+	
+	extend lseng.uiLayer.mobileApp {
+
+
+		mobile-ui = component 'Mobile UI' {
+			#longevity-diagnostic-tools, #mobileApp 
+			title 'Mobile UI'
+			icon tech:android
+			description '
+					Handles user interactions
+			'
+			technology 'React'
+		}
+
+		health-tracking = component 'Health Tracking' {
+			#longevity-diagnostic-tools, #mobileApp 
+			title 'Health Tracking'
+			icon https://img.icons8.com/?size=96&id=OxJTtjAvociw&format=png
+			description '
+					Allows users to track lifestyle data
+			'
+			technology 'React, Device APIs'
+		}
+
+		recommendation-engine = component 'Recommendation Engine Client' {
+			#longevity-diagnostic-tools, #mobileApp 
+			title 'Recommendation Engine Client'
+			icon https://img.icons8.com/?size=48&id=85618&format=png
+			description '
+					Displays personalized recommendations
+			'
+			technology 'React, API Calls'
+		}
+		
+		goal-management = component 'Goal Management' {
+			#longevity-diagnostic-tools, #mobileApp 
+			title 'Goal Management'
+			icon https://img.icons8.com/?size=100&id=20891&format=png
+			description '
+					Enables users to set and track goals
+			'
+			technology 'React'
+		}
+    	
+		wearable-integration = component 'Wearable Integration' {
+			#longevity-diagnostic-tools, #mobileApp 
+			title 'Wearable Integration'
+			icon https://img.icons8.com/?size=100&id=Lbo4vGdwP79k&format=png
+			description '
+					Collects data from wearable devices
+			'
+			technology 'React, SDKs'
+		}
+
+    	mobile-auth = component 'Mobile Authentication' {
+			#longevity-diagnostic-tools, #mobileApp 
+			title 'Mobile Authentication'
+			icon https://img.icons8.com/?size=100&id=72708&format=png
+			description '
+					Handles user login
+			'
+			technology 'React Auth Library'
+		}
+    	
+    	mobile-api = component 'Mobile API Client' {
+			#longevity-diagnostic-tools, #mobileApp 
+			title 'Mobile API Client'
+			icon https://icon.icepanel.io/Technology/svg/OpenAPI.svg //tech:openapi
+			description '
+					ommunicates with the API Gateway
+			'
+			technology 'Fetxh/axios'
+		}
+    
+    
+    	// RELATIONS
+    	mobile-ui  -> health-tracking 		"Uses"
+		mobile-ui  -> recommendation-engine "Uses"
+		mobile-ui  -> goal-management 		"Uses"
+		mobile-ui  -> wearable-integration 	"Uses"
+		mobile-ui  -> mobile-auth 			"Uses"
+		mobile-ui  -> mobile-api 			"Uses"
+		//mobile-api -> lseng.middleware 		"Communicates with \n[HTTPS]"
+
+	}
+
+}

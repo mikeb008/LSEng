@@ -1,0 +1,96 @@
+model {
+	
+	extend lseng.uiLayer.webApp.community-access {
+		//title 'Community Engagement Service'
+		//description 'Facilitates social interaction'
+		//icon tech:nodejs
+
+		forum-management = application 'Forum Management' {
+			#longevity-interventionTools, #community
+			title 'Forum Management'
+			description '
+					Manages discussion forums
+			'
+			technology 'Node.js/Java/tbd'
+			
+		}
+
+		chat-service = service 'Chat Service' {
+			#longevity-interventionTools, #community
+			title 'Chat Service'
+			description '
+					Provides real-time chat functionality
+			'
+			technology 'Node.js/Java/, WebSocket'
+			
+		}
+
+		social-feed = application 'Social Feed' {
+			#longevity-interventionTools, #community
+			title 'Social Feed'
+			description '
+					Displays community activity and updates
+			'
+			technology 'Node.js/Java/tbd WebSocket'
+			
+		}
+
+		group-management = service 'Group Management' {
+			#longevity-interventionTools, #community
+			title 'Group Management'
+			description '
+					Allows users to create and join groups
+			'
+			technology 'Node.js/Java/'
+			
+		}
+    	
+		notificationService = application 'Notification Service' {
+			#longevity-interventionTools, #community
+			title 'Notification Service'
+			description '
+					Sends notifications about community activity
+			'
+			technology 'Node.js/Java/'
+			
+		}
+    	
+		sentiment-analysis = application 'Sentiment Analysis' {
+			#longevity-interventionTools, #community
+			title 'Sentiment Analysis'
+			description '
+					Analyzes community sentiment
+			'
+			technology 'Python, NLP'
+			
+		}
+    	
+		data-access = service 'Data Access' {
+			#longevity-interventionTools, #community
+			title 'Data Access'
+			description '
+					Interacts with the Data Storage
+			'
+			technology 'Node.js'
+			
+		}
+    
+    
+    	// RELATIONS
+    	forum-management 	 -> chat-service 		"Uses"
+ 		forum-management 	 -> social-feed 		"Uses"
+ 		chat-service     	 -> social-feed 		"Uses"
+ 		group-management 	 -> forum-management 	"Uses"
+ 		group-management 	 -> chat-service 		"Uses"
+ 		notificationService -> forum-management 	"Uses"
+ 		notificationService -> chat-service		 "Uses"
+ 		sentiment-analysis 	 -> forum-management 	"Uses"
+ 		sentiment-analysis 	 -> chat-service 		"Uses"
+ 		forum-management 	 -> data-access 		"Uses"
+ 		chat-service 		 -> data-access 		"Uses"
+ 		group-management 	 -> data-access 		"Uses"
+ 		notificationService -> data-access 		"Uses"
+ 		sentiment-analysis 	 -> data-access			"Uses"
+
+	}
+}

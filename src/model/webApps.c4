@@ -1,0 +1,110 @@
+model {
+	
+	extend lseng.uiLayer.webApp {
+		#longevity-diagnostic-tools
+
+		user-interface = component 'User Interface' {
+			#webApp, #longevity-diagnostic-tools
+			title 'User Interface'
+			description '
+					Handles user interactions
+			'
+			technology 'React'
+			
+		}
+
+		dashboard = component 'Dashboard' {
+			#webApp, #longevity-diagnostic-tools
+			title 'Dashboard'
+			description '
+					Displays key health and progress data
+			'
+			technology 'React, Charting Library'
+			
+		}
+
+		intervention-manager = component 'Intervention Management' {
+			#webApp, #longevity-diagnostic-tools
+			title 'Intervention Management'
+			description '
+					Allows users to view and manage interventions
+			'
+			technology 'React, API Calls'
+			
+		}
+		
+  		lms = component 'LMS Integration' {
+			#webApp, #longevity-interventionTools
+			title 'LMS Integration'
+			description '
+					Displays educational content and tracks progress
+			'
+			technology 'React, LMS API'
+			
+		}
+    
+  		coaching = component 'Coaching Integration' {
+			#webApp, #longevity-interventionTools
+			title 'Coaching Integration'
+			description '
+					Enables communication with health coaches
+			'
+			technology 'React, API Calls'
+			
+		}
+
+  		community-access = component 'Community Access' {
+			#webApp, #longevity-interventionTools
+			title 'Community Access'
+			description '
+					Provides access to community forums and groups
+			'
+			technology 'React'
+			
+		}
+
+  		auth = component 'Authentication' {
+			#webApp, #longevity-diagnostic-tools
+			title 'Authentication'
+			icon https://img.icons8.com/?size=100&id=43482&format=png
+			description '
+					Handles user login and authorization
+			'
+			technology 'React, Auth Library'
+			
+		}
+
+		notificationService = service 'Notification Service' {
+			#webApp, #longevity-diagnostic-tools
+			title 'Notification Service'
+			description 'Handles user communication'
+			icon tech:facebook
+			technology 'Node.js, comms Libraries'
+		}
+
+  		apiClient = service 'API Client' {
+			#webApp, #longevity-diagnostic-tools
+			title 'API Client'
+			icon https://img.icons8.com/?size=60&id=79865&format=png
+			description '
+					Communicates with the API Gateway
+			'
+			technology 'Fetch/Axios'
+			
+		}
+ 
+    
+    	// RELATIONS
+    	user-interface -> dashboard 			"Uses"
+		user-interface -> intervention-manager 	"Uses"
+		user-interface -> lms 					"Uses"
+		user-interface -> coaching 				"Uses"
+		user-interface -> community-access 		"Uses"
+		user-interface -> auth 					"Uses"
+		user-interface -> apiClient 			"Uses"
+		user-interface -> notificationService 	"Uses"
+		apiClient     -> lseng.middleware 		"Communicates with \n[HTTPS]"
+
+	}
+
+}

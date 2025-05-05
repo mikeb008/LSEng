@@ -1,0 +1,17 @@
+global {
+
+    style interventionTools element.tag = #longevity-interventionTools {
+    	notation "Longevity Intervention Tools"
+    	color amber
+  	}
+
+    style diagnostic-tools element.tag = #longevity-diagnostic-tools {
+    	notation "Longevity Diagnostic Tools"
+    	color green
+  	}
+		
+	style ai-conversational-tools element.tag = #ai-conversational-tools {
+    	notation "AI Conversational Tools"
+    	color indigo
+  	}
+}

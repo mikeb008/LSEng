@@ -1,0 +1,197 @@
+views {
+
+ 
+ 
+ /**
+  * @likec4-generated(v1)
+  * iKRoYXNo2ShjMzkyYzgyZTNiYjliM2ZjNWMxZjBkYWRiMmI1ZTk1YjM2NWMwNTQ3qmF1dG9MYXlvdXSBqWRpcmVjdGlvbqJUQqF4zOSheUKld2lkdGjNCDKmaGVpZ2h0zQhtpW5vZGVz3gAUpWxzZW5ngqFilMzkQs0IMs0IbaFjw65sc2VuZy5wZXJzb25hc4KhYpTNAQx5zQeWzQEioWPDrmxzZW5nLnVpLWxheWVygqFilM0CNs0CWc0E080BIaFjw7Bsc2VuZy5taWRkbGV3YXJlgqFilM0D/80EIM0BQMy0oWPCr2xzZW5nLmFwcC1sYXllcoKhYpTNBZDNBjzNA17NAkWhY8OwbHNlbmcuZGF0YS1sYXllcoKhYpTNAQ/NBkHNA1zNAkWhY8O7bHNlbmcucGVyc29uYXMucGFydHJpY2lwYW50gqFilM0BNMywzQFAzLShY8K4bHNlbmcucGVyc29uYXMuY2xpbmljaWFugqFi
+  * lM0CuMywzQFAzLShY8K4bHNlbmcucGVyc29uYXMuY3VzdG9kaWFugqFilM0EN8yzzQFbzLShY8K0bHNlbmcucGVyc29uYXMuY29hY2iCoWKUzQc6zL7NAUDMtKFjwrZsc2VuZy5wZXJzb25hcy5hY3R1YXJ5gqFilM0F3My1zQFAzLShY8K4bHNlbmcudWktbGF5ZXIubW9iaWxlQXBwgqFilM0CXs0Cns0BQMy0oWPCtWxzZW5nLnVpLWxheWVyLndlYkFwcIKhYpTNBAzNAp7NAUDMtKFjwrhsc2VuZy51aS1sYXllci53ZWFyYWJsZXOCoWKUzQWhzQKZzQFAzLShY8K0bHNlbmcuYXBwLWxheWVyLmFwcHOCoWKUzQW4zQZ5zQFAzLShY8KybHNlbmcuYXBwLWxheWVyLmFpgqFilM0HZs0Gec0BYMy0oWPCtWxzZW5nLmFwcC1sYXllci5hbGdvc4KhYpTNBbjNB6XNAUDMtKFj
+  * wrNsc2VuZy5kYXRhLWxheWVyLmRigqFilM0BN80Gfs0BQMy0oWPCuWxzZW5nLmRhdGEtbGF5ZXIuZGF0YWxha2WCoWKUzQLlzQZ+zQFezLShY8K7bHNlbmcuZGF0YS1sYXllci5ibG9ja2NoYWlugqFilM0BN80Hqs0BSsy0oWPCpWVkZ2VzhKZ5ZG5mdHKComNwkYKheM0EsqF5zQI2oXCUks0EhM0CipLNBITNAo2SzQSEzQKQks0EhM0Ck6Y2NTZqYXOComNwkYKheM0EgaF5zQTioXCUks0Egc0E4pLNBIDNBPqSzQR/zQUSks0Ef80FKKZpM2p2YWiComNwkYKheM0FtKF5zQWjoXCUks0EfM0F5pLNBHzNBfWSzQR8zQYGks0EfM0GF6cxaGlxeDNzgqJjcJGCoXjNA6Ghec0F+6FwlJLNA9zNBZ6SzQNQzQWwks0Cgs0F1ZLNAdnNBh0=
+  */
+	view lseng  of lseng {
+		
+		title 'System Context Diagram'
+		description 'System Context'
+		include lseng, lseng.*, 
+			personas, personas.*,
+			lseng.uiLayer, lseng.uiLayer.*,
+			lseng.appLayer, lseng.appLayer.*, 
+			lseng.dataLayer, lseng.dataLayer.*
+
+		exclude *  ->  lseng.dataLayer.db
+		exclude lseng.uiLayer.webApp.apiClient -> lseng.middleware 
+		
+		global  style diagnostic-tools
+        global  style interventionTools
+        global  style ai-conversational-tools
+		
+		style  element.tag = #longevity-interventionTools 	{notation "Longevity Intervention Tools"}
+		style  element.tag = #longevity-diagnostic-tools   	{notation "Longevity Diagnostic Tools"}
+		style  element.tag = #ai-conversational-tools 		{notation "AI Conversational Tools"}
+
+		autoLayout TopBottom
+	}
+
+  
+  
+  
+ /**
+  * @likec4-generated(v1)
+  * iKRoYXNo2SgxMTU4OTE5Mjc2NzRlOTk3MzRjODkwMDEwNDZlMzNhYmY4MjU2YjM3qmF1dG9MYXlvdXSBqWRpcmVjdGlvbqJUQqF4AqF5DqV3aWR0aM0EpaZoZWlnaHTNB8Olbm9kZXPeABSkQGdyMYKhYpQGDs0EkM0C6KFjw6RAZ3IygqFilAjNA1nNBJ/NAe2hY8OkQGdyM4KhYpQCzQWOzQSlzQJDoWPDuGxzZW5nLmFwcC1sYXllci5hcHBzLmxtc4KhYpQwRc0BaMy0oWPCvWxzZW5nLmFwcC1sYXllci5hcHBzLmNvYWNoaW5ngqFilM0Buk3NAUXMtKFjwr5sc2VuZy5hcHAtbGF5ZXIuYXBwcy5jb21tdW5pdHmCoWKUzQMkUs0BQMy0oWPCuWxzZW5nLmFwcC1sYXllci5hcHBzLmdhbWWCoWKULs0BNM0Bbsy0oWPCuGxzZW5nLmFwcC1sYXllci5hbGdvcy5iZYKhYpTN
+  * AcTNATrNAUDMtKFjwrhsc2VuZy5hcHAtbGF5ZXIuYWxnb3MuZHSCoWKUzQMuzQFAzQFAzLShY8LZIGxzZW5nLmFwcC1sYXllci5hbGdvcy5jbHVzdGVyaW5ngqFilETNAhnNAUrMtKFjwr9sc2VuZy5hcHAtbGF5ZXIuYXBwcy5vbmJvYXJkaW5ngqFilDDNA5DNAUDMtKFjwrtsc2VuZy5hcHAtbGF5ZXIuYXBwcy5zdXJ2ZXmCoWKUzQGgzQOWzQFAzLShY8K4bHNlbmcuYXBwLWxheWVyLmFwcHMuaGw3gqFilDHNBGrNAUDMtKFjwr5sc2VuZy5hcHAtbGF5ZXIuYXBwcy5pbmdlc3Rpb26CoWKUzQM/zQOQzQFAzLShY8K4bHNlbmcuYXBwLWxheWVyLmFpLmNvYWNogqFilCrNBcXNAWHMtKFjwtkhbHNlbmcuYXBwLWxheWVyLmFpLmhlYWx0aC1jaGF0Ym90gqFilM0Btc0F
+  * yc0BScy0oWPCvWxzZW5nLmFwcC1sYXllci5haS5tb3RpdmF0aW9ugqFilM0DIs0F0c0BXMy0oWPCvGxzZW5nLmFwcC1sYXllci5haS5tb2RlcmF0b3KCoWKUM80G8c0BUMy0oWPC2Sdsc2VuZy5hcHAtbGF5ZXIuYWkuYmVoYXZpb3JhbC1lY29ub21pY3OCoWKUzQGuzQb1zQFDzLShY8K7bHNlbmcuYXBwLWxheWVyLmFpLmZlZWRiYWNrgqFilM0DLM0G6M0BS8y0oWPCpWVkZ2VzgA==
+  */
+	view system-context {
+
+		style element.tag = #longevity-interventionTools {
+    		notation "Longevity Intervention Tools"
+    		color primary
+  		}
+
+		style element.tag = #longevity-diagnostic-tools {
+    		notation "Longevity Diagnostic Tools"
+    		color sky
+  		}
+		
+		style element.tag = #ai-conversational-tools {
+    		notation "AI Conversational Tools'"
+    		color indigo
+  		}
+
+		group  'Longevity Diagnostic Tools' {
+			color primary
+    		opacity 40%
+    		border solid
+			include element.tag = #longevity-interventionTools 
+			//{
+			// lseng.personas.clinician -> * 'Validates Health Ratings' 
+			//}
+		}
+
+		group 'Longevity Intervention Tools' {
+			color sky
+    		opacity 40%
+    		border solid
+			include element.tag = #longevity-diagnostic-tools
+			
+		}
+
+		group 'AI Conversational Tools' {
+			color indigo
+    		opacity 40%
+    		border solid
+			include element.tag = #ai-conversational-tools
+		}
+
+		autoLayout TopBottom
+	}
+
+ /**
+  * @likec4-generated(v1)
+  * iKRoYXNo2ShlM2I2NmE4ZTBiYzRmMDdiZmQ5YTkwODEyZWNhZDRmMTlkMjlmNWY5qmF1dG9MYXlvdXSBqWRpcmVjdGlvbqJMUqF40f35oXnR/Suld2lkdGjNDsKmaGVpZ2h0zQTjpW5vZGVz3gAXrmxzZW5nLnBlcnNvbmFzgqFilM0Bv9H9K80HZc0BI6Fjw9klbHNlbmcuYXBwLWxheWVyLmFwcHMuZGlhZ25vc3RpYy10b29sc4KhYpTR/fnyzQYPzQEioWPD2Sdsc2VuZy5hcHAtbGF5ZXIuYXBwcy5pbnRlcnZlbnRpb24tdG9vbHOCoWKUzQRe980DRs0CF6Fjw9knbHNlbmcuYXBwLWxheWVyLmFpLmNvbnZlcnNhdGlvbmFsLXRvb2xzgqFilM0ICu3NBLHNAh6hY8O7bHNlbmcucGVyc29uYXMucGFydHJpY2lwYW50gqFilM0E3tH9Y80BQMy0oWPCuGxzZW5nLnBlcnNv
+  * bmFzLmNsaW5pY2lhboKhYpTNBlDR/WrNAUDMtKFjwrhsc2VuZy5wZXJzb25hcy5jdXN0b2RpYW6CoWKUzQHn0f1pzQFbzLShY8K0bHNlbmcucGVyc29uYXMuY29hY2iCoWKUzQNt0f1izQFAzLShY8K2bHNlbmcucGVyc29uYXMuYWN0dWFyeYKhYpTNB7zR/XLNAUDMtKFjwtkwbHNlbmcuYXBwLWxheWVyLmFwcHMuZGlhZ25vc3RpYy10b29scy5vbmJvYXJkaW5ngqFilM0BMi3NAUDMtKFjwtksbHNlbmcuYXBwLWxheWVyLmFwcHMuZGlhZ25vc3RpYy10b29scy5zdXJ2ZXmCoWKUzQKgKc0BQMy0oWPC2Slsc2VuZy5hcHAtbGF5ZXIuYXBwcy5kaWFnbm9zdGljLXRvb2xzLmhsN4KhYpTR/iA3zQFAzLShY8LZL2xzZW5nLmFwcC1sYXllci5hcHBzLmRpYWdub3N0aWMt
+  * dG9vbHMuaW5nZXN0aW9ugqFilNC4Ks0BQMy0oWPC2Stsc2VuZy5hcHAtbGF5ZXIuYXBwcy5pbnRlcnZlbnRpb24tdG9vbHMubG1zgqFilM0EjM0BMs0BaMy0oWPC2TBsc2VuZy5hcHAtbGF5ZXIuYXBwcy5pbnRlcnZlbnRpb24tdG9vbHMuY29hY2hpbmeCoWKUzQY1zQEnzQFFzLShY8LZMWxzZW5nLmFwcC1sYXllci5hcHBzLmludGVydmVudGlvbi10b29scy5jb21tdW5pdHmCoWKUzQSGLs0BQMy0oWPC2Sxsc2VuZy5hcHAtbGF5ZXIuYXBwcy5pbnRlcnZlbnRpb24tdG9vbHMuZ2FtZYKhYpTNBg4wzQFuzLShY8LZLWxzZW5nLmFwcC1sYXllci5haS5jb252ZXJzYXRpb25hbC10b29scy5jb2FjaIKhYpTNCDjNARvNAWHMtKFjwtk2bHNlbmcuYXBwLWxheWVyLmFp
+  * LmNvbnZlcnNhdGlvbmFsLXRvb2xzLmhlYWx0aC1jaGF0Ym90gqFilM0JsSrNAUnMtKFjwtkybHNlbmcuYXBwLWxheWVyLmFpLmNvbnZlcnNhdGlvbmFsLXRvb2xzLm1vdGl2YXRpb26CoWKUzQnNzQEbzQFczLShY8LZMWxzZW5nLmFwcC1sYXllci5haS5jb252ZXJzYXRpb25hbC10b29scy5tb2RlcmF0b3KCoWKUzQgyJM0BUMy0oWPC2Txsc2VuZy5hcHAtbGF5ZXIuYWkuY29udmVyc2F0aW9uYWwtdG9vbHMuYmVoYXZpb3JhbC1lY29ub21pY3OCoWKUzQsuMc0BQ8y0oWPC2TBsc2VuZy5hcHAtbGF5ZXIuYWkuY29udmVyc2F0aW9uYWwtdG9vbHMuZmVlZGJhY2uCoWKUzQtHzQEuzQFLzLShY8KlZWRnZXOA
+  */
+	dynamic view sys-context {
+		include lseng.personas,* where tag = #personas
+		include lseng.appLayer.apps.diagnostic-tools, lseng.appLayer.apps.diagnostic-tools.* where tag = #longevity-diagnostic-tools
+		include lseng.appLayer.apps.interventionTools, lseng.appLayer.apps.interventionTools.* where tag = #longevity-interventionTools
+		include lseng.appLayer.ai.conversational-tools, lseng.appLayer.ai.conversational-tools.* where tag = #ai-conversational-tools
+		//include lseng.dataLayer, seng.dataLayer.* where tag = #dataLayer
+		
+		//lseng.appLayer.apps.diagnostic-tools   -> lseng.appLayer.apps.interventionTools 	'Triggers interventions'
+		//lseng.appLayer.apps.diagnostic-tools   -> lseng.dataLayer.blockchain				'Stores immutable ratings'
+		//lseng.appLayer.apps.diagnostic-tools   -> lseng.dataLayer.datalake					'Writes raw analyutics'
+		//lseng.appLayer.apps.interventionTools -> lseng.appLayer.ai.conversational-tools 	'Enhances engagement'
+		//lseng.appLayer.apps.ai.conversational-tools -> lseng.seng.personas 					'provide real-time guidance'
+		//lseng.personas.clinician 	  -> lseng.appLayer.apps.diagnostic-tools 					'Validates health ratings'
+		//lseng.personas.actuary 	  -> lseng.appLayer.apps.diagnostic-tools 					'Uses LOE for Risk Models'
+		//lseng.personas.partricipant -> lseng.appLayer.apps.diagnostic-tools 					'Submits Data'
+		//lseng.personas.coach 		  -> lseng.appLayer.apps.diagnostic-tools 					'Provides guidance'
+
+
+		
+	}
+
+	
+
+	view mobileApp of lseng.uiLayer.mobileApp {
+
+		group 'Mobile User Interface' {
+			color blue
+    		opacity 40%
+    		border solid
+			include lseng.uiLayer.mobileApp
+			include element.tag = #mobileApp
+			
+		}
+		include lseng.uiLayer.mobileApp with {
+    		navigateTo mobileApps-l3
+  		}
+		include lseng.uiLayer.mobileApp with {
+    		navigateTo lseng
+  		}
+	}
+
+	view mobileApps-l3 of lseng.uiLayer.mobileApp {
+		include lseng.uiLayer.mobileApp, lseng.uiLayer.mobileApp.*
+		include lseng.uiLayer.mobileApp with {
+    		navigateTo mobileApp
+  		}
+	}
+
+	view ai of lseng.appLayer.ai {
+
+		group 'AI Conversational Tools' {
+			color indigo
+    		opacity 40%
+    		border solid
+			include lseng.appLayer.ai 
+			include element.tag = #ai-conversational-tools
+			
+		}
+		style * {
+    		color indigo
+  		}
+		include lseng.appLayer.ai  with {
+    		navigateTo lseng
+  		}
+	}
+
+	view algos of lseng.appLayer.algos {
+
+		group 'Algorithms' {
+			color indigo
+    		opacity 40%
+    		border solid
+			include lseng.appLayer.algos 
+			include element.tag = #algorithms
+			
+		}
+		style * {
+    		color indigo
+  		}
+		include lseng.appLayer.algos  with {
+    		navigateTo lseng
+  		}
+	}
+
+	view core-ai of lseng.appLayer.apps {
+
+		group 'Core Apps' {
+			color sky
+    		opacity 40%
+    		border solid
+			include lseng.appLayer.apps
+			include * where tag is not #algorithms and tag is not #ai-conversational-tools
+			
+		}
+		style * {
+    		color sky
+  		}
+		include lseng.appLayer.apps  with {
+    		navigateTo lseng
+  		}
+	}
+}

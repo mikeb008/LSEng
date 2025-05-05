@@ -1,0 +1,28 @@
+@startuml  
+'!include <likec4/plantuml/likec4>  
+!include <C4/C4_Container>
+
+title System Landscape  
+
+Person(client, "Client", "End-user managing longevity")  
+Person(clinician, "Clinician", "Medical expert")  
+Person(coach, "Coach", "Behavioral guide")  
+
+System_Ext(public_data, "Public Data", "External datasets")  
+System(data_lake, "DataLake", "Centralized data storage")  
+System(blockchain, "Blockchain", "Immutable health records")  
+
+System_Boundary(longevity_platform, "Longevity Risk Management Platform") {  
+    System(onboarding, "Onboarding Module", "User enrollment & tools")  
+    System(survey_app, "Survey App Suite", "Data collection & engagement")  
+    System(publish, "Publish Module", "Reports & insights")  
+}  
+
+Rel(client, onboarding, "Uses")  
+Rel(client, survey_app, "Interacts with")  
+Rel(coach, survey_app, "Provides guidance via")  
+Rel(clinician, data_lake, "Uploads medical data")  
+Rel(data_lake, blockchain, "Secures transactions")  
+Rel(public_data, data_lake, "Feeds reference data")  
+
+@enduml  

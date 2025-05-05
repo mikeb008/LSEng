@@ -1,0 +1,95 @@
+model {
+	
+	extend lseng.uiLayer.webApp {
+		//title 'Gamification Service'
+		//description 'Manages gamified elements'
+
+		challenge-engine = application 'Challenge Engine' {
+			#longevity-interventionTools, #gamification
+			title 'Challenge Engine'
+			icon https://img.icons8.com/?size=100&id=123495&format=png
+			description '
+					Creates and manages challenges
+			'
+			technology 'Java'
+			
+		}
+
+		reward-system = application 'Reward System' {
+			#longevity-interventionTools, #gamification
+			title 'Reward System'
+			icon https://img.icons8.com/?size=100&id=37862&format=png
+			description '
+					Handles points, badges, and other rewards
+			'
+			technology 'Java'
+			
+		}
+
+		leaderboard = application 'Leaderboard Management' {
+			#longevity-interventionTools, #gamification
+			title 'Leaderboard Management'
+			icon https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.U37xIJjVWWfZ3Hp-YkLlnQAAAA%26pid%3DApi&f=1&ipt=ec33fb1f42e75365c9fc43688a3c30db8e4678a20e8a24c76ab31260d99947bf&ipo=images
+			description '
+					Tracks user rankings and progress
+			'
+			technology 'Java'
+			
+		}
+
+		game-progress = application 'Progress Tracking' {
+			#longevity-interventionTools, #gamification
+			title 'Progress Tracking'
+			icon https://img.icons8.com/?size=100&id=7317&format=png
+			description '
+					Monitors user engagement and goal achievement
+			'
+			technology 'Java'
+			
+		}
+		
+		personalization = application 'Personalization' {
+			#longevity-interventionTools, #gamification
+			title 'Personalization'
+			icon https://img.icons8.com/?size=160&id=SmOn2OXD9vU7&format=png
+			description '
+					Adapts gamified elements based on user behavior
+			'
+			technology 'Java'
+			
+		}
+    	
+		data_access = application 'Data Access' {
+			#longevity-interventionTools, #gamification
+			title 'Data Access'
+			icon https://img.icons8.com/?size=100&id=11349&format=png
+			description '
+					Interacts with the Data Storage
+			'
+			technology 'Java'
+			
+		}
+    
+    
+    	// RELATIONS
+    	challenge-engine -> reward-system 		"Uses"
+		challenge-engine -> leaderboard 		"Uses"
+		reward-system    -> leaderboard 		"Uses"
+		game-progress 	 -> challenge-engine 	"Uses"
+		game-progress 	 -> reward-system 		"Uses"
+		progress 		 -> leaderboard 		"Uses"
+		personalization  -> challenge-engine  	"Uses"
+		personalization  -> reward-system 		"Uses"
+		personalization  -> leaderboard 		"Uses"
+		challenge-engine -> data_access 		"Uses"
+		reward-system    -> data_access 		"Uses"
+		leaderboard    	 -> data_access 		"Uses"
+		game-progress 	 -> data_access 		"Uses"
+		personalization  -> data_access 		"Uses"
+
+
+	}
+}
+
+
+

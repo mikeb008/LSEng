@@ -1,0 +1,69 @@
+model {
+	
+	extend lseng.appLayer.apps {
+
+		diagnostic-tools = container 'Longevity Diagnostic Tools' {
+			onboarding = component 'Onboarding' {
+				#longevity-diagnostic-tools
+				title 'Onboarding'
+				description ''
+				icon https://img.icons8.com/?size=160&id=JNOv2Xlxz9K3&format=png
+			}
+
+			survey = component 'Survey' {
+				#longevity-diagnostic-tools
+				title 'Surveys'
+				description 'Collects self-reported lifestyle and health info'
+				icon https://img.icons8.com/?size=100&id=7751&format=png
+			}
+
+			hl7 = component 'HL7' {
+				#longevity-diagnostic-tools
+				title 'Hl7'
+				description 'Interfaces with medical systems to collect standardized health data'
+			}
+
+			ingestion = component 'Public Data Ingestion' {
+				#longevity-diagnostic-tools
+				title 'Public Data Ingestion'
+				description 'Supplies population-level datasets for benchmarking and model enrichment'
+			}
+
+		}
+
+		interventionTools = container 'Longevity Intervention Tools' {
+			lms = component 'LMS' {
+				#longevity-interventionTools
+				title 'Lifestyle Intervention Education LMS'
+				description 'Structured LMS delivering curated educational content personalized to participant profiles'
+				icon https://img.icons8.com/?size=160&id=VmqyouRQjEEx&format=png
+			}
+
+			coaching = component 'Coaching App' {
+				#longevity-interventionTools
+				title 'Coaching App'
+				description 'Digital platform facilitating human coaching sessions, AI-driven goal tracking, and motivational support.'
+			
+			}
+
+			community = component 'Community Engagement' {
+				#longevity-interventionTools
+				title 'Community Engagement App'
+				description 'Social interaction platform fostering group challenges, milestones, and accountability networks'
+			}
+
+			game = component 'Gamification' {
+				#longevity-interventionTools
+				title 'Lifestyle Gamification App'
+				description 'Game mechanics-based mobile app incentivizing and sustaining healthy behaviours.'
+			}
+
+
+			digitalTwin = component 'Digital Twin' {
+				#longevity-interventionTools
+				title 'Digital Twin'
+				description 'AI-enabled simulations modelling future health trajectories under varying intervention scenarios'
+			}
+		}
+	}
+}

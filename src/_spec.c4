@@ -1,0 +1,85 @@
+specification {
+
+  element person {
+    style {
+      shape person
+      color blue
+    }
+  }
+
+  element application
+  tag webApp
+  tag mobileApp
+  tag wearables
+  tag longevity-diagnostic-tools
+  tag longevity-interventionTools 
+  tag ai-conversational-tools
+  tag algorithms
+  tag personas
+  tag dataLayer
+  tag middleware
+  tag gamification
+  tag lms
+  tag community
+  tag digitalTwin
+  tag coaching
+  tag notifications
+
+  element actor {
+    style {
+      shape person
+      color secondary
+    }
+  }
+
+  element external_system {
+    style {
+      color gray
+    }
+  }
+
+  element system {
+    style {
+      //color green
+      opacity 50%
+    }
+  }
+
+
+  element container {
+    style {
+      color blue
+    }
+  }
+
+  element component {
+    style {
+      color blue
+    }
+  }
+  element service
+  element webapp {
+    style {
+      shape browser
+    }
+  }
+  element mobile {
+    style {
+      shape mobile
+    }
+  }
+  element database {
+    style {
+      shape storage
+    }
+  }
+  element db_table {
+    style {
+      shape storage
+    }
+  }  
+
+  relationship solid {
+    line solid
+  }
+}

@@ -1,0 +1,76 @@
+model {
+	
+	extend lseng.uiLayer.webApp.coaching {
+		//title 'Health Coaching Service'
+		//description 'Provides tools for health coaches'
+
+		session-management = component 'Session Management' {
+			#longevity-interventionTools, #coaching
+			title 'Session Management'
+			icon https://img.icons8.com/?size=64&id=1VFv3XHVnFVg&format=png
+			description '
+					Schedules and manages coaching sessions
+			'
+			technology 'Node.js'
+			
+		}
+
+		communicationTools = component 'Communication Tools' {
+			#longevity-interventionTools, #coaching
+			title 'Communication Tools'
+			icon https://img.icons8.com/?size=100&id=54386&format=png
+			description '
+					Enables communication between coaches and users
+			'
+			technology 'Node.js, Chat APIs'
+			
+		}
+
+		progress = component 'Progress Tracking' {
+			#longevity-interventionTools, #coaching
+			title 'Progress Tracking'
+			icon https://img.icons8.com/?size=160&id=5bNLU6ys1X6y&format=png
+			description '
+					Records user progress and adherence
+			'
+			technology 'Node.js'
+			
+		}
+
+		reporting = component 'Reporting' {
+			#longevity-interventionTools, #coaching
+			icon https://img.icons8.com/?size=100&id=57711&format=png
+			title 'Reporting'
+			description '
+					Generates reports for coaches and administrators
+			'
+			technology 'Node.js'
+			
+		}
+		
+		intervention-support = component 'Intervention Support' {
+			#longevity-interventionTools, #coaching
+			title 'Intervention Support'
+			icon https://img.icons8.com/?size=160&id=odHARfEnqt3Z&format=png
+			description '
+					Provides tools and resources for delivering interventions
+			'
+			technology 'Node.js'
+			
+		}
+    	
+		data_access = component 'Data Access' {
+			#longevity-interventionTools, #coaching
+			icon https://img.icons8.com/?size=100&id=16734&format=png
+			title 'Data Access'
+			description '
+					Interacts with the Data Storage
+			'
+			technology 'Node.js'
+			
+		}
+    
+    
+
+	}
+}

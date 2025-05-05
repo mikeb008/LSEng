@@ -1,0 +1,30 @@
+model {
+	
+	extend lseng.appLayer.algos {
+
+		be = component 'Behavioural Economics' {
+			#longevity-interventionTools, #algorithms
+			title 'Behavioural Economics'
+			description '
+					Integration of rewards, loss aversion strategies, and cost considerations (financial, emotional, psychological) to nudge behaviour change and sustain engagement.
+			'
+		}
+
+		dt = component 'Digital Twin Algorithm' {
+			#longevity-interventionTools, #algorithms
+			title 'Digital Twin Algorithm'
+			description '
+				AI-enabled simulations modelling future health trajectories under varying intervention scenarios
+			'
+		}
+
+		clustering = component 'Clustering Algorithm' {
+			#longevity-interventionTools, #algorithms
+			title 'Clustering Algorithm'
+			description '
+				Machine learning-driven psychographic and behavioural archetyping for tailored interventions.
+			'
+		}
+
+	}
+}

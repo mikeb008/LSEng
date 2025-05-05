@@ -1,0 +1,63 @@
+model {
+    
+    extend lseng.uiLayer.webApp.lms {
+        
+        contentDelivery = application 'Content Delivery' {
+            #lms, #longevity-interventionTools
+            title 'Content Delivery'
+            description 'Provides educational modules and materials'
+            technology 'Saas -> Python'
+        }
+
+    
+        progressTrackingLms = application 'Progress Tracking' {
+            #lms, #longevity-interventionTools
+            title 'Progress Tracking'
+            description 'Monitors user learning progress'
+            technology 'Python/Java'
+           
+        }
+
+    
+        quizManagement = application 'Quiz Management' {
+            #lms, #longevity-interventionTools
+            title 'Quiz Management'
+            description 'Handles quizzes and assessments'
+            technology 'Python/Java'
+        }
+    
+        personalizationLms = application 'Personalization' {
+            #lms, #longevity-interventionTools
+            title 'Personalization'
+            description 'Adapts learning paths based on user data'
+            technology 'Python/Java'
+        }
+
+    
+        reportingLms = application 'Reporting' {
+            #lms, #longevity-interventionTools
+            title 'Reporting'
+            description 'Generates reports on user engagement and learning outcomes'
+            technology 'Python/Java'
+        }
+
+    
+        dataAccessLms = application 'Data Access' {
+            #lms, #longevity-interventionTools
+            title 'Data Access'
+            description 'Interacts with the Data Storage'
+            technology 'Python/Java'
+        }
+
+        // RELATIONSHIPS
+        contentDelivery     -> progressTrackingLms  'Uses'
+        contentDelivery     -> quizManagement       'Uses'
+        progressTrackingLms -> personalizationLms   'Uses'
+        quizManagement      -> personalizationLms   'Uses'
+        personalizationLms  -> reportingLms         'Uses'
+        contentDelivery     -> dataAccessLms        'Uses'
+        progressTrackingLms -> dataAccessLms        'Uses'
+        quizManagement      -> dataAccessLms        'Uses'
+        personalizationLms  -> dataAccessLms        'Uses'
+}
+
