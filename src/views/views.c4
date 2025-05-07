@@ -2,13 +2,14 @@ views {
 
  
  
+
  /**
   * @likec4-generated(v1)
-  * iKRoYXNo2ShjMzkyYzgyZTNiYjliM2ZjNWMxZjBkYWRiMmI1ZTk1YjM2NWMwNTQ3qmF1dG9MYXlvdXSBqWRpcmVjdGlvbqJUQqF4zOSheUKld2lkdGjNCDKmaGVpZ2h0zQhtpW5vZGVz3gAUpWxzZW5ngqFilMzkQs0IMs0IbaFjw65sc2VuZy5wZXJzb25hc4KhYpTNAQx5zQeWzQEioWPDrmxzZW5nLnVpLWxheWVygqFilM0CNs0CWc0E080BIaFjw7Bsc2VuZy5taWRkbGV3YXJlgqFilM0D/80EIM0BQMy0oWPCr2xzZW5nLmFwcC1sYXllcoKhYpTNBZDNBjzNA17NAkWhY8OwbHNlbmcuZGF0YS1sYXllcoKhYpTNAQ/NBkHNA1zNAkWhY8O7bHNlbmcucGVyc29uYXMucGFydHJpY2lwYW50gqFilM0BNMywzQFAzLShY8K4bHNlbmcucGVyc29uYXMuY2xpbmljaWFugqFi
-  * lM0CuMywzQFAzLShY8K4bHNlbmcucGVyc29uYXMuY3VzdG9kaWFugqFilM0EN8yzzQFbzLShY8K0bHNlbmcucGVyc29uYXMuY29hY2iCoWKUzQc6zL7NAUDMtKFjwrZsc2VuZy5wZXJzb25hcy5hY3R1YXJ5gqFilM0F3My1zQFAzLShY8K4bHNlbmcudWktbGF5ZXIubW9iaWxlQXBwgqFilM0CXs0Cns0BQMy0oWPCtWxzZW5nLnVpLWxheWVyLndlYkFwcIKhYpTNBAzNAp7NAUDMtKFjwrhsc2VuZy51aS1sYXllci53ZWFyYWJsZXOCoWKUzQWhzQKZzQFAzLShY8K0bHNlbmcuYXBwLWxheWVyLmFwcHOCoWKUzQW4zQZ5zQFAzLShY8KybHNlbmcuYXBwLWxheWVyLmFpgqFilM0HZs0Gec0BYMy0oWPCtWxzZW5nLmFwcC1sYXllci5hbGdvc4KhYpTNBbjNB6XNAUDMtKFj
-  * wrNsc2VuZy5kYXRhLWxheWVyLmRigqFilM0BN80Gfs0BQMy0oWPCuWxzZW5nLmRhdGEtbGF5ZXIuZGF0YWxha2WCoWKUzQLlzQZ+zQFezLShY8K7bHNlbmcuZGF0YS1sYXllci5ibG9ja2NoYWlugqFilM0BN80Hqs0BSsy0oWPCpWVkZ2VzhKZ5ZG5mdHKComNwkYKheM0EsqF5zQI2oXCUks0EhM0CipLNBITNAo2SzQSEzQKQks0EhM0Ck6Y2NTZqYXOComNwkYKheM0EgaF5zQTioXCUks0Egc0E4pLNBIDNBPqSzQR/zQUSks0Ef80FKKZpM2p2YWiComNwkYKheM0FtKF5zQWjoXCUks0EfM0F5pLNBHzNBfWSzQR8zQYGks0EfM0GF6cxaGlxeDNzgqJjcJGCoXjNA6Ghec0F+6FwlJLNA9zNBZ6SzQNQzQWwks0Cgs0F1ZLNAdnNBh0=
+  * iKRoYXNo2ShlYzRiZWQyNjRkNWVmNjhlYTFmZTliOWU3ZjNjZTk2ZTkzNmM2Y2I4qmF1dG9MYXlvdXSBqWRpcmVjdGlvbqJUQqF40LuheQ6ld2lkdGjNCc6maGVpZ2h0zQjqpW5vZGVz3gAUpWxzZW5ngqFilNC7Ds0Jzs0I6qFjw65sc2VuZy5wZXJzb25hc4KhYpTNAfRFzQUIzQJFoWPDrWxzZW5nLnVpTGF5ZXKCoWKUzQI2zQMZzQSKzQEloWPDsGxzZW5nLm1pZGRsZXdhcmWCoWKUzQPczQUyzQFAzLShY8KubHNlbmcuYXBwTGF5ZXKCoWKUzQYDzQaLzQNezQJFoWPDr2xzZW5nLmRhdGFMYXllcoKhYpTjzQaCzQNczQJFoWPDu2xzZW5nLnBlcnNvbmFzLnBhcnRyaWNpcGFudIKhYpTNAhzMgs0BQMy0oWPCuGxzZW5nLnBlcnNvbmFzLmNsaW5pY2lhboKhYpTNA8rM
+  * gs0BQMy0oWPCuGxzZW5nLnBlcnNvbmFzLmN1c3RvZGlhboKhYpTNBXjMgs0BW8y0oWPCtGxzZW5nLnBlcnNvbmFzLmNvYWNogqFilM0CHM0Brs0BQMy0oWPCtmxzZW5nLnBlcnNvbmFzLmFjdHVhcnmCoWKUzQPYzQGuzQFAzLShY8K3bHNlbmcudWlMYXllci5tb2JpbGVBcHCCoWKUzQJezQNQzQFAzLShY8K0bHNlbmcudWlMYXllci53ZWJBcHCCoWKUzQPizQNYzQFAzLShY8K3bHNlbmcudWlMYXllci53ZWFyYWJsZXOCoWKUzQVEzQNizQFTzLShY8KzbHNlbmcuYXBwTGF5ZXIuYXBwc4KhYpTNBivNBsjNAUDMtKFjwrFsc2VuZy5hcHBMYXllci5haYKhYpTNB9nNBsjNAWDMtKFjwrRsc2VuZy5hcHBMYXllci5hbGdvc4KhYpTNBivNB/TNAUDMtKFjwrJsc2VuZy5k
+  * YXRhTGF5ZXIuZGKCoWKUC80Gv80BQMy0oWPCuGxzZW5nLmRhdGFMYXllci5kYXRhbGFrZYKhYpTNAbnNBr/NAV7MtKFjwrpsc2VuZy5kYXRhTGF5ZXIuYmxvY2tjaGFpboKhYpQLzQfrzQFKzLShY8KlZWRnZXOEpzF3NHhicm2ComNwkYKheM0EeKF5zQKPoXCUks0EeM0CipLNBHjNAo2SzQR4zQKQks0EeM0Ck6ZkN2wydnSComNwkYKheM0EfqF5zQUHoXCUks0Ef80E4pLNBH/NBPqSzQR+zQUSks0Efs0FKKcxandtYjUwgqJjcJGCoXjNBSKhec0FzqFwlJLNBHzNBeaSzQR8zQX1ks0EfM0GBpLNBHzNBhenMWM5M2ZuOYKiY3CRgqF4zQNsoXnNBkmhcJSSzQPczQWeks0DUM0FsJLNAoLNBdWSzQHZzQYd
   */
-	view lseng  of lseng {
+	view lseng of lseng {
 		
 		title 'System Context Diagram'
 		description 'System Context'
@@ -147,9 +148,9 @@ views {
 			color indigo
     		opacity 40%
     		border solid
-			include lseng.appLayer.ai 
+			include lseng.appLayer.ai
 			include element.tag = #ai-conversational-tools
-			
+			exclude lseng.appLayer.algos
 		}
 		style * {
     		color indigo
@@ -177,21 +178,34 @@ views {
   		}
 	}
 
-	view core-ai of lseng.appLayer.apps {
+	view core-apps of lseng.appLayer.apps {
 
 		group 'Core Apps' {
-			color sky
-    		opacity 40%
+			//color sky
+    		opacity 30%
     		border solid
-			include lseng.appLayer.apps
-			include * where tag is not #algorithms and tag is not #ai-conversational-tools
+			include lseng.appLayer.apps, lseng.appLayer.apps.*, 
+			        lseng.appLayer.apps.diagnostic-tools.*, lseng.appLayer.apps.interventionTools.*,
+			//include * where tag is not #algorithms and tag is not #ai-conversational-tools
 			
 		}
-		style * {
-    		color sky
+
+		style lseng.appLayer.apps.diagnostic-tools {
+    		color green
+			opacity 50%
   		}
+		style lseng.appLayer.apps.interventionTools {
+    		color amber
+			opacity 30%
+  		}
+
+
 		include lseng.appLayer.apps  with {
     		navigateTo lseng
   		}
+
+		global  style diagnostic-tools
+        global  style interventionTools
+        global  style ai-conversational-tools
 	}
 }

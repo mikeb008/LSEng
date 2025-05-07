@@ -7,9 +7,8 @@ model {
 			coach = component 'Longevity Coach AI' {
 				#ai-conversational-tools
 				title 'Longevity Coach AI'
-				description '
-					IAI Virtual assistant offering personalized recommendations based on lifestyle and health profiles			'
-			
+				description 'IAI Virtual assistant offering personalized recommendations based on lifestyle and health profiles'
+				icon https://img.icons8.com/?size=100&id=62903&format=png
 			}
 
 			health-chatbot = component 'Health Literacy Chatbot' {
@@ -18,6 +17,7 @@ model {
 				description '
 					Conversational interface providing real-time education on medical, nutritional, and lifestyle topics
 				'
+				icon https://img.icons8.com/?size=100&id=62903&format=png
 			}
 
 			motivation = component 'Motivational Interviewing AI' {
@@ -26,6 +26,7 @@ model {
 				description '
 				daptive conversation agents using motivational interviewing techniques to strengthen commitment to behavioural change
 				'
+				icon https://img.icons8.com/?size=100&id=62903&format=png
 			}
 
 			moderator = component 'Community Moderator AI' {
@@ -34,6 +35,7 @@ model {
 				description '
 				Automated social engagement facilitator, nurturing group discussions, challenges, and recognition mechanisms
 				'
+				icon https://img.icons8.com/?size=100&id=62903&format=png
 			}
 
 			behavioral-economics = component 'Behavioural Economics AI' {
@@ -42,6 +44,7 @@ model {
 				description '
 				Embedding rewards framing, loss aversion techniques, and cost (financial, emotional, psychological) nudges directly into conversational exchanges to maximize behaviour change adherence
 				'
+				icon https://img.icons8.com/?size=100&id=62903&format=png
 			}
 
 			feedback = component 'Feedback Loop Integrator AI' {
@@ -50,6 +53,7 @@ model {
 				description '
 					Real-time data collector and analyzer, feeding back insights to users and dynamically adjusting intervention pathways
 				'
+				icon https://img.icons8.com/?size=100&id=62903&format=png
 			}
 		}
 

@@ -51,7 +51,7 @@ model {
 			description 'Provides Web, Mobile & Wearables Interaface to iusers'
 			icon tech:chrome
 			style {
-				opacity 45%
+				opacity 30%
 			}
 
 			mobileApp = application 'Mobile Application' {
@@ -75,7 +75,7 @@ model {
 				#longevity-interventionTools
 				title 'Wearable Devices'
 				description 'Devices that provide biometric & activity data'
-				tech:garmin
+				icon https://img.icons8.com/?size=160&id=i0iesJ3Dkgmj&format=png
 			}
 		}
 
@@ -88,6 +88,7 @@ model {
 			}
 
 			apps = container 'Core Apps' {
+				#longevity-interventionTools
 				title 'Core LSEng Apps'
 				description 'Core LSEng Applications'
 				icon tech:java

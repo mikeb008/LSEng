@@ -21,12 +21,14 @@ model {
 				#longevity-diagnostic-tools
 				title 'Hl7'
 				description 'Interfaces with medical systems to collect standardized health data'
+				icon https://images.icon-icons.com/37/PNG/96/clinical_medical_3912.png
 			}
 
 			ingestion = component 'Public Data Ingestion' {
 				#longevity-diagnostic-tools
 				title 'Public Data Ingestion'
 				description 'Supplies population-level datasets for benchmarking and model enrichment'
+				icon https://img.icons8.com/?size=160&id=0Ni5Auk1wGUQ&format=png
 			}
 
 		}
@@ -43,19 +45,21 @@ model {
 				#longevity-interventionTools
 				title 'Coaching App'
 				description 'Digital platform facilitating human coaching sessions, AI-driven goal tracking, and motivational support.'
-			
+				icon https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.tMdaGFtvkE3H-mxX7v9dxQHaHa%3Fpid%3DApi&f=1&ipt=83f4c7ee21a9fcb57e3e02429fa4677ceef89e2b23afd616940a91aa6633f643&ipo=images
 			}
 
 			community = component 'Community Engagement' {
 				#longevity-interventionTools
 				title 'Community Engagement App'
 				description 'Social interaction platform fostering group challenges, milestones, and accountability networks'
+				icon https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.n8I6_4V-114nwFChxKVVEwHaIw%3Fcb%3Diwp1%26pid%3DApi&f=1&ipt=665aac96be2319f24d4f53f0e2d60d160d0ea334441922de7fce8e8566f8bfe0&ipo=images
 			}
 
 			game = component 'Gamification' {
 				#longevity-interventionTools
 				title 'Lifestyle Gamification App'
 				description 'Game mechanics-based mobile app incentivizing and sustaining healthy behaviours.'
+				icon https://images.icon-icons.com/3405/PNG/96/gamification_icon_216219.png
 			}
 
 
@@ -63,6 +67,7 @@ model {
 				#longevity-interventionTools
 				title 'Digital Twin'
 				description 'AI-enabled simulations modelling future health trajectories under varying intervention scenarios'
+				icon https://images.icon-icons.com/3403/PNG/96/twin_digital_asset_icon_215616.png
 			}
 		}
 	}

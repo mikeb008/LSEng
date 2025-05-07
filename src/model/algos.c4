@@ -8,6 +8,7 @@ model {
 			description '
 					Integration of rewards, loss aversion strategies, and cost considerations (financial, emotional, psychological) to nudge behaviour change and sustain engagement.
 			'
+			icon https://img.icons8.com/?size=160&id=ocJ4KYwIezyB&format=png
 		}
 
 		dt = component 'Digital Twin Algorithm' {
@@ -16,6 +17,7 @@ model {
 			description '
 				AI-enabled simulations modelling future health trajectories under varying intervention scenarios
 			'
+			icon https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.33B8ljSZziKW6Jkmlf9A4wAAAA%26pid%3DApi&f=1&ipt=2dee7eba36c7df94f22d829279b5b8615e980fe28a6076ba8f3b0ca1f7c52506&ipo=images
 		}
 
 		clustering = component 'Clustering Algorithm' {
@@ -24,6 +26,7 @@ model {
 			description '
 				Machine learning-driven psychographic and behavioural archetyping for tailored interventions.
 			'
+			icon https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.uDnggUuJBdFobt0vE3A08QHaHa%26cb%3Diwp1%26pid%3DApi&f=1&ipt=44545a803467e6fb2b49fcf98c5575fb1fcf12fe985885e976205d2c5bbe6fa3&ipo=images
 		}
 
 	}

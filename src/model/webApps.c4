@@ -10,6 +10,7 @@ model {
 					Handles user interactions
 			'
 			technology 'React'
+			icon https://img.icons8.com/?size=100&id=53450&format=png
 			
 		}
 
@@ -20,7 +21,7 @@ model {
 					Displays key health and progress data
 			'
 			technology 'React, Charting Library'
-			
+			icon https://img.icons8.com/?size=100&id=92zOGOmxGkWj&format=png
 		}
 
 		intervention-manager = component 'Intervention Management' {
@@ -30,7 +31,7 @@ model {
 					Allows users to view and manage interventions
 			'
 			technology 'React, API Calls'
-			
+			icon https://img.icons8.com/?size=160&id=odHARfEnqt3Z&format=png
 		}
 		
   		lms = component 'LMS Integration' {
@@ -40,7 +41,7 @@ model {
 					Displays educational content and tracks progress
 			'
 			technology 'React, LMS API'
-			
+			icon https://img.icons8.com/?size=160&id=MUDTixsqpDFC&format=png
 		}
     
   		coaching = component 'Coaching Integration' {
@@ -50,7 +51,7 @@ model {
 					Enables communication with health coaches
 			'
 			technology 'React, API Calls'
-			
+			icon https://img.icons8.com/?size=100&id=18899&format=png
 		}
 
   		community-access = component 'Community Access' {
@@ -60,7 +61,7 @@ model {
 					Provides access to community forums and groups
 			'
 			technology 'React'
-			
+			icon https://img.icons8.com/?size=100&id=41551&format=png
 		}
 
   		auth = component 'Authentication' {
@@ -78,8 +79,9 @@ model {
 			#webApp, #longevity-diagnostic-tools
 			title 'Notification Service'
 			description 'Handles user communication'
-			icon tech:facebook
+			//icon tech:facebook
 			technology 'Node.js, comms Libraries'
+			icon https://img.icons8.com/?size=100&id=40624&format=png
 		}
 
   		apiClient = service 'API Client' {
@@ -90,7 +92,7 @@ model {
 					Communicates with the API Gateway
 			'
 			technology 'Fetch/Axios'
-			
+			//icon https://img.icons8.com/?size=100&id=21893&format=png	
 		}
  
     
