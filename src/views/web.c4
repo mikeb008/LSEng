@@ -1,8 +1,8 @@
 views {
     view webApp of lseng.uiLayer.webApp {
-        global  style diagnostic-tools
+        global  style diagnosticTools
         global  style interventionTools
-        global  style ai-conversational-tools
+        global  style ai-conversationalTools
 		group 'Browser User Interface' {
 			color blue
     		opacity 40%
@@ -18,80 +18,86 @@ views {
 		include lseng.uiLayer.webApp with {
     		navigateTo webApps-l3
   		}
+
 		include lseng.uiLayer.webApp with {
     		navigateTo lseng
   		}
 	}
 
-	view webApps-l3 of lseng.uiLayer.webApp.user-interface {
-		global  style diagnostic-tools
-        
+	view webApps-l3 of lseng.uiLayer.diagnosticTools.webApp {
+		global  style diagnosticTools
+        global  style interventionTools
+        global  style ai-conversationalTools
+
         group 'Web User Interface' {
 			//color blue
     		opacity 40%
     		border solid
-			include lseng.uiLayer.webApp
+			include lseng.uiLayer.diagnosticTools.webApp, lseng.uiLayer.diagnosticTools.webApp.*
 			include element.tag = #webApp
 		}
 
-        global  style interventionTools
-        global  style ai-conversational-tools
+        
         //style element.tag = #longevity-interventionTools {
         //    color amber
         //}
 		
-		include lseng.uiLayer.webApp with {
-    		navigateTo webApp
+		include lseng.uiLayer.diagnosticTools.webApp with {
+    		navigateTo webApp-lms
   		}
-
-        style lseng.uiLayer.webApp {
+        
+        style lseng.uiLayer.diagnosticTools.webApp {
             opacity 30%
         }
 
 	}
 
     view webApp-lms of lseng.uiLayer.webApp.lms {
-        global  style diagnostic-tools
-        include lseng.uiLayer.webApp.lms, lseng.uiLayer.webApp.lms.*
+        global  style diagnosticTools
+        include lseng.appLayer.interventionTools.lms, lseng.appLayer.interventionTools.lms.*
+        
+        //exclude lseng.uiLayer.diagnosticTools.webApp
         style lseng.uiLayer.webApp.lms {
             opacity 50%
         }
 
+        global  style diagnosticTools
         global  style interventionTools
-        global  style ai-conversational-tools
-        include lseng.uiLayer.webApp with {
-    		navigateTo webApp
-  		}
-    }
-
-    view webApp-auth of lseng.uiLayer.webApp.auth {
-        global  style diagnostic-tools
-        include lseng.uiLayer.webApp.auth, lseng.uiLayer.webApp.auth.*
-        style lseng.uiLayer.webApp.auth {
-            opacity 50%
-        }
-
-        global  style interventionTools
-        global  style ai-conversational-tools
-        include lseng.uiLayer.webApp with {
+        global  style ai-conversationalTools
+        
+        include lseng.appLayer.interventionTools.lms with {
     		navigateTo webApp
   		}
     }
 
     view webApp-coaching of lseng.uiLayer.webApp.coaching {
-        global  style interventionTools
-        include lseng.uiLayer.webApp.coaching, lseng.uiLayer.webApp.coaching.*
+        global  style diagnosticTools
+        include lseng.appLayer.interventionTools.coaching, lseng.appLayer.interventionTools.coaching.*
+        
+        //exclude lseng.uiLayer.diagnosticTools.webApp
         style lseng.uiLayer.webApp.coaching {
             opacity 50%
         }
 
-        global  style diagnostic-tools
-        global  style ai-conversational-tools
-
-         style lseng.uiLayer.webApp, lseng.uiLayer.webApp.coaching {
-            opacity 30%
+        global  style diagnosticTools
+        global  style interventionTools
+        global  style ai-conversationalTools
+        
+        include lseng.appLayer.interventionTools.coaching with {
+    		navigateTo webApp
+  		}
+    }
+    view webApp-auth of lseng.uiLayer.diagnosticTools.webApp.auth {
+        
+        include lseng.uiLayer.diagnosticTools.webApp.auth, lseng.uiLayer.diagnosticTools.webApp.auth.*
+        style lseng.uiLayer.webApp.auth {
+            opacity 50%
         }
 
+        global  style diagnosticTools
+        global  style interventionTools
+        global  style ai-conversationalTools
+        
         include lseng.uiLayer.webApp with {
     		navigateTo webApp
   		}
@@ -100,15 +106,33 @@ views {
     view webApp-community of lseng.uiLayer.webApp.community-access {
         global  style interventionTools
 
-        include lseng.uiLayer.webApp.community-access, lseng.uiLayer.webApp.community-access.*
+        include lseng.appLayer.interventionTools.community, lseng.appLayer.interventionTools.community.*
+        style lseng.uiLayer.webApp.community-access {
+            opacity 50%
+        }
+
+        global  style diagnosticTools
+        global  style ai-conversationalTools
+
+         style lseng.appLayer.interventionTools.community {
+            opacity 30%
+        }
+        include lseng.appLayer.interventionTools.community with {
+    		navigateTo webApp
+  		}
+    }
+
+    view webApp-notification of lseng.uiLayer.webApp.notificationService {
+        global  style interventionTools
+        global  style diagnosticTools
+        global  style ai-conversationalTools
+
+        include lseng.uiLayer.webApp.notificationService, lseng.uiLayer.webApp.notificationService.*
         style lseng.uiLayer.webApp.coaching {
             opacity 50%
         }
 
-        global  style diagnostic-tools
-        global  style ai-conversational-tools
-
-         style lseng.uiLayer.webApp, lseng.uiLayer.webApp.community-access {
+        style lseng.uiLayer.webApp, lseng.uiLayer.webApp.notificationService {
             opacity 30%
         }
         include lseng.uiLayer.webApp with {
@@ -116,21 +140,21 @@ views {
   		}
     }
 
-    view webApp-notification of lseng.uiLayer.webApp.notificationService {
+    view webApp-intervention-tool of lseng.appLayer.apps.interventionTools {
+        global  style diagnosticTools
         global  style interventionTools
-        global  style diagnostic-tools
-        global  style ai-conversational-tools
-
-        include lseng.uiLayer.webApp.notificationService, lseng.uiLayer.webApp.notificationService.*
-        style lseng.uiLayer.webApp.coaching {
+        global  style ai-conversationalTools
+        
+        //include element.tag = #longevity-interventionTools
+        include lseng.appLayer.apps.interventionTools, lseng.appLayer.apps.interventionTools.*
+        
+        style lseng.appLayer.apps.interventionTools {
             opacity 50%
         }
 
-         style lseng.uiLayer.webApp, lseng.uiLayer.webApp.notificationService {
-            opacity 30%
-        }
-        include lseng.uiLayer.webApp with {
-    		navigateTo webApp
-  		}
+        
+        //include lseng.uiLayer.webApp with {
+    	//	navigateTo webApp
+  		//}
     }
 }

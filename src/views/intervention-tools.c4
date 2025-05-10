@@ -1,0 +1,103 @@
+views {
+
+    view  intervention-tools of lseng.appLayer.interventionTools {
+
+        include lseng.appLayer.interventionTools, lseng.appLayer.interventionTools.*
+		style lseng.appLayer.interventionTools {
+    		color amber
+			opacity 30%
+  		}
+
+
+		include lseng.appLayer.interventionTools  with {
+    		navigateTo lseng
+  		}
+
+
+        include lseng.appLayer.lms with {
+            navigateTo intervention-tools
+        }
+        
+        include lseng.appLayer.interventionTools.coaching with {
+            navigateTo coaching
+        }
+        
+        include lseng.appLayer.interventionTools.game with {
+            navigateTo gamification
+        }
+        
+        include lseng.appLayer.interventionTools.digitalTwin with {
+            navigateTo digitalTwin
+        }
+        
+        include lseng.appLayer.interventionTools.community with {
+            navigateTo community
+        }
+
+        include lseng.appLayer.interventionTools.lms with {
+            navigateTo lms
+        }
+		global  style diagnosticTools
+        global  style interventionTools
+        global  style ai-conversationalTools
+	}
+
+    view gamification of lseng.appLayer.interventionTools.game {
+        //include lseng.uiLayer.webApp.gamification, lseng.uiLayer.webApp.gamification.*
+        include lseng.appLayer.interventionTools.game, lseng.appLayer.interventionTools.game.*
+        include lseng.appLayer.interventionTools with {
+            navigateTo intervention-tools   
+        }
+		global  style diagnosticTools
+        global  style interventionTools
+        global  style ai-conversationalTools
+    }
+
+    view digitalTwin of lseng.appLayer.interventionTools.digitalTwin {
+        include  lseng.appLayer.interventionTools.digitalTwin,lseng.appLayer.interventionTools.digitalTwin.*
+
+        include lseng.appLayer.interventionTools.digitalTwin with {
+            navigateTo intervention-tools   
+        }
+
+		global  style diagnosticTools
+        global  style interventionTools
+        global  style ai-conversationalTools
+    }
+
+    view coaching of lseng.appLayer.interventionTools.coaching {
+        include  lseng.appLayer.interventionTools.coaching,lseng.appLayer.interventionTools.coaching.*
+
+        include lseng.appLayer.interventionTools.coaching with {
+            navigateTo intervention-tools   
+        }
+
+		global  style diagnosticTools
+        global  style interventionTools
+        global  style ai-conversationalTools
+    }
+
+    view community of lseng.appLayer.interventionTools.community {
+        include  lseng.appLayer.interventionTools.community,lseng.appLayer.interventionTools.community.*
+
+        include lseng.appLayer.interventionTools.community with {
+            navigateTo intervention-tools   
+        }
+
+		global  style diagnosticTools
+        global  style interventionTools
+        global  style ai-conversationalTools
+    }
+
+    view lms of lseng.appLayer.interventionTools.lms {
+        include  lseng.appLayer.interventionTools.lms,lseng.appLayer.interventionTools.lms.*
+
+        include lseng.appLayer.interventionTools.lms with {
+            navigateTo intervention-tools   
+        }
+
+		global  style diagnosticTools
+        global  style interventionTools
+        global  style ai-conversationalTools
+    }
+}

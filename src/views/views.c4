@@ -2,12 +2,13 @@ views {
 
  
  
-
+ 
  /**
   * @likec4-generated(v1)
-  * iKRoYXNo2ShlYzRiZWQyNjRkNWVmNjhlYTFmZTliOWU3ZjNjZTk2ZTkzNmM2Y2I4qmF1dG9MYXlvdXSBqWRpcmVjdGlvbqJUQqF40LuheQ6ld2lkdGjNCc6maGVpZ2h0zQjqpW5vZGVz3gAUpWxzZW5ngqFilNC7Ds0Jzs0I6qFjw65sc2VuZy5wZXJzb25hc4KhYpTNAfRFzQUIzQJFoWPDrWxzZW5nLnVpTGF5ZXKCoWKUzQI2zQMZzQSKzQEloWPDsGxzZW5nLm1pZGRsZXdhcmWCoWKUzQPczQUyzQFAzLShY8KubHNlbmcuYXBwTGF5ZXKCoWKUzQYDzQaLzQNezQJFoWPDr2xzZW5nLmRhdGFMYXllcoKhYpTjzQaCzQNczQJFoWPDu2xzZW5nLnBlcnNvbmFzLnBhcnRyaWNpcGFudIKhYpTNAhzMgs0BQMy0oWPCuGxzZW5nLnBlcnNvbmFzLmNsaW5pY2lhboKhYpTNA8rM
-  * gs0BQMy0oWPCuGxzZW5nLnBlcnNvbmFzLmN1c3RvZGlhboKhYpTNBXjMgs0BW8y0oWPCtGxzZW5nLnBlcnNvbmFzLmNvYWNogqFilM0CHM0Brs0BQMy0oWPCtmxzZW5nLnBlcnNvbmFzLmFjdHVhcnmCoWKUzQPYzQGuzQFAzLShY8K3bHNlbmcudWlMYXllci5tb2JpbGVBcHCCoWKUzQJezQNQzQFAzLShY8K0bHNlbmcudWlMYXllci53ZWJBcHCCoWKUzQPizQNYzQFAzLShY8K3bHNlbmcudWlMYXllci53ZWFyYWJsZXOCoWKUzQVEzQNizQFTzLShY8KzbHNlbmcuYXBwTGF5ZXIuYXBwc4KhYpTNBivNBsjNAUDMtKFjwrFsc2VuZy5hcHBMYXllci5haYKhYpTNB9nNBsjNAWDMtKFjwrRsc2VuZy5hcHBMYXllci5hbGdvc4KhYpTNBivNB/TNAUDMtKFjwrJsc2VuZy5k
-  * YXRhTGF5ZXIuZGKCoWKUC80Gv80BQMy0oWPCuGxzZW5nLmRhdGFMYXllci5kYXRhbGFrZYKhYpTNAbnNBr/NAV7MtKFjwrpsc2VuZy5kYXRhTGF5ZXIuYmxvY2tjaGFpboKhYpQLzQfrzQFKzLShY8KlZWRnZXOEpzF3NHhicm2ComNwkYKheM0EeKF5zQKPoXCUks0EeM0CipLNBHjNAo2SzQR4zQKQks0EeM0Ck6ZkN2wydnSComNwkYKheM0EfqF5zQUHoXCUks0Ef80E4pLNBH/NBPqSzQR+zQUSks0Efs0FKKcxandtYjUwgqJjcJGCoXjNBSKhec0FzqFwlJLNBHzNBeaSzQR8zQX1ks0EfM0GBpLNBHzNBhenMWM5M2ZuOYKiY3CRgqF4zQNsoXnNBkmhcJSSzQPczQWeks0DUM0FsJLNAoLNBdWSzQHZzQYd
+  * iKRoYXNo2Sg3YzEzZWU4MzgzZGMyOThmZDZkMzY2ZGNhZTUxZDEyZmVjMDc1NzU3qmF1dG9MYXlvdXSBqWRpcmVjdGlvbqJUQqF40f9HoXnMjqV3aWR0aM0NLKZoZWlnaHTNB8albm9kZXPeABalbHNlbmeCoWKU0f9HzI7NCfvNB8ahY8OubHNlbmcucGVyc29uYXOCoWKUD8zFzQeHzQEsoWPDrWxzZW5nLnVpTGF5ZXKCoWKUT80CtM0GsM0Bf6Fjw7Bsc2VuZy5taWRkbGV3YXJlgqFilM0DDc0EoM0BQMy0oWPCrmxzZW5nLmFwcExheWVygqFilM0Ekc0F5M0Eic0BHaFjw69sc2VuZy5kYXRhTGF5ZXKCoWKU0f9vzQXnzQNczQJFoWPDu2xzZW5nLnBlcnNvbmFzLnBhcnRyaWNpcGFudIKhYpQ3zPzNAUDMtKFjwrhsc2VuZy5wZXJzb25hcy5jbGluaWNpYW6CoWKUzQGt
+  * zP/NAUDMtKFjwrhsc2VuZy5wZXJzb25hcy5jdXN0b2RpYW6CoWKUzQMjzQEFzQFbzLShY8K0bHNlbmcucGVyc29uYXMuY29hY2iCoWKUzQYtzQEVzQFAzLShY8K2bHNlbmcucGVyc29uYXMuYWN0dWFyeYKhYpTNBLbNAQ3NAUDMtKFjwr1sc2VuZy51aUxheWVyLmRpYWdub3N0aWNUb29sc4KhYpTNAfjNAvfNBN/NAROhY8OxbHNlbmcudWlMYXllci5sb2WCoWKUd80C680BXsy0oWPC2SBsc2VuZy5hcHBMYXllci5pbnRlcnZlbnRpb25Ub29sc4KhYpTNB7LNBiTNAUDMtKFjwrRsc2VuZy5hcHBMYXllci5hbGdvc4KhYpTNBLnNBhvNAUDMtKFjwrZsc2VuZy5hcHBMYXllci5haVRvb2xzgqFilM0GKM0GJc0BYMy0oWPCsmxzZW5nLmRhdGFMYXllci5kYoKhYpTQl80G
+  * JM0BQMy0oWPCuGxzZW5nLmRhdGFMYXllci5kYXRhbGFrZYKhYpTNAUXNBiTNAV7MtKFjwrpsc2VuZy5kYXRhTGF5ZXIuYmxvY2tjaGFpboKhYpTQl80HUM0BSsy0oWPC2Sdsc2VuZy51aUxheWVyLmRpYWdub3N0aWNUb29scy5tb2JpbGVBcHCCoWKUzQIgzQMuzQFAzLShY8LZJGxzZW5nLnVpTGF5ZXIuZGlhZ25vc3RpY1Rvb2xzLndlYkFwcIKhYpTNA87NAy7NAUDMtKFjwtknbHNlbmcudWlMYXllci5kaWFnbm9zdGljVG9vbHMud2VhcmFibGVzgqFilM0FXM0DM80BU8y0oWPCpWVkZ2VzhKcxdzR4YnJtgqJjcJGCoXjNA8Ohec0CmKFwlJLNBTjNAoaSzQVCzQKMks0FTc0CkpLNBVfNApmmZDdsMnZ0gqJjcJGCoXjNA7Chec0EdqFwlJLNCO7NAlKSzQmIzQKGks0K
+  * VM0CypLNCuLNAvqnMWp3bWI1MIKiY3CRgqF4zQTdoXnNBY2hcJSSzQuMzQOOks0LjM0DnZLNC4zNA66SzQuMzQO/pzFjOTNmbjmComNwkoKheM0DDKF5zQUegqF4zQLEoXnNBXChcJeSzQwWzQOOks0MNM0DopLNDFLNA7aSzQxvzQPJks0McM0DypLNDHLNA8uSzQxzzQPM
   */
 	view lseng of lseng {
 		
@@ -15,21 +16,26 @@ views {
 		description 'System Context'
 		include lseng, lseng.*, 
 			personas, personas.*,
-			lseng.uiLayer, lseng.uiLayer.*,
-			lseng.appLayer, lseng.appLayer.*, 
-			lseng.dataLayer, lseng.dataLayer.*
+			lseng.uiLayer, lseng.uiLayer.*, lseng.uiLayer.diagnosticTools, lseng.uiLayer.diagnosticTools.*, 
+			lseng.appLayer.interventionTools, lseng.appLayer.algos, lseng.appLayer.aiTools,
+			lseng.dataLayer, lseng.dataLayer.*,
+			//lseng.middleware, lseng.middleware.*
 
 		exclude *  ->  lseng.dataLayer.db
-		exclude lseng.uiLayer.webApp.apiClient -> lseng.middleware 
+		//exclude lseng.uiLayer.webApp.apiClient -> lseng.middleware 
 		
-		global  style diagnostic-tools
+		global  style diagnosticTools
         global  style interventionTools
-        global  style ai-conversational-tools
+        global  style ai-conversationalTools
 		
+		style lseng.uiLayer, lseng.uiLayer.diagnosticTools {
+			opacity 40%
+		}
 		style  element.tag = #longevity-interventionTools 	{notation "Longevity Intervention Tools"}
-		style  element.tag = #longevity-diagnostic-tools   	{notation "Longevity Diagnostic Tools"}
-		style  element.tag = #ai-conversational-tools 		{notation "AI Conversational Tools"}
+		style  element.tag = #longevity-diagnosticTools   	{notation "Longevity Diagnostic Tools"}
+		style  element.tag = #ai-conversationalTools 		{notation "AI Conversational Tools"}
 
+		
 		autoLayout TopBottom
 	}
 
@@ -49,12 +55,12 @@ views {
     		color primary
   		}
 
-		style element.tag = #longevity-diagnostic-tools {
+		style element.tag = #longevity-diagnosticTools {
     		notation "Longevity Diagnostic Tools"
     		color sky
   		}
 		
-		style element.tag = #ai-conversational-tools {
+		style element.tag = #ai-conversationalTools {
     		notation "AI Conversational Tools'"
     		color indigo
   		}
@@ -73,7 +79,7 @@ views {
 			color sky
     		opacity 40%
     		border solid
-			include element.tag = #longevity-diagnostic-tools
+			include element.tag = #longevity-diagnosticTools
 			
 		}
 
@@ -81,7 +87,7 @@ views {
 			color indigo
     		opacity 40%
     		border solid
-			include element.tag = #ai-conversational-tools
+			include element.tag = #ai-conversationalTools
 		}
 
 		autoLayout TopBottom
@@ -96,20 +102,20 @@ views {
   */
 	dynamic view sys-context {
 		include lseng.personas,* where tag = #personas
-		include lseng.appLayer.apps.diagnostic-tools, lseng.appLayer.apps.diagnostic-tools.* where tag = #longevity-diagnostic-tools
+		include lseng.appLayer.apps.diagnosticTools, lseng.appLayer.apps.diagnosticTools.* where tag = #longevity-diagnosticTools
 		include lseng.appLayer.apps.interventionTools, lseng.appLayer.apps.interventionTools.* where tag = #longevity-interventionTools
-		include lseng.appLayer.ai.conversational-tools, lseng.appLayer.ai.conversational-tools.* where tag = #ai-conversational-tools
+		include lseng.appLayer.ai.conversationalTools, lseng.appLayer.ai.conversationalTools.* where tag = #ai-conversationalTools
 		//include lseng.dataLayer, seng.dataLayer.* where tag = #dataLayer
 		
-		//lseng.appLayer.apps.diagnostic-tools   -> lseng.appLayer.apps.interventionTools 	'Triggers interventions'
-		//lseng.appLayer.apps.diagnostic-tools   -> lseng.dataLayer.blockchain				'Stores immutable ratings'
-		//lseng.appLayer.apps.diagnostic-tools   -> lseng.dataLayer.datalake					'Writes raw analyutics'
-		//lseng.appLayer.apps.interventionTools -> lseng.appLayer.ai.conversational-tools 	'Enhances engagement'
-		//lseng.appLayer.apps.ai.conversational-tools -> lseng.seng.personas 					'provide real-time guidance'
-		//lseng.personas.clinician 	  -> lseng.appLayer.apps.diagnostic-tools 					'Validates health ratings'
-		//lseng.personas.actuary 	  -> lseng.appLayer.apps.diagnostic-tools 					'Uses LOE for Risk Models'
-		//lseng.personas.partricipant -> lseng.appLayer.apps.diagnostic-tools 					'Submits Data'
-		//lseng.personas.coach 		  -> lseng.appLayer.apps.diagnostic-tools 					'Provides guidance'
+		//lseng.appLayer.apps.diagnosticTools   -> lseng.appLayer.apps.interventionTools 	'Triggers interventions'
+		//lseng.appLayer.apps.diagnosticTools   -> lseng.dataLayer.blockchain				'Stores immutable ratings'
+		//lseng.appLayer.apps.diagnosticTools   -> lseng.dataLayer.datalake					'Writes raw analyutics'
+		//lseng.appLayer.apps.interventionTools -> lseng.appLayer.ai.conversationalTools 	'Enhances engagement'
+		//lseng.appLayer.apps.ai.conversationalTools -> lseng.seng.personas 					'provide real-time guidance'
+		//lseng.personas.clinician 	  -> lseng.appLayer.apps.diagnosticTools 					'Validates health ratings'
+		//lseng.personas.actuary 	  -> lseng.appLayer.apps.diagnosticTools 					'Uses LOE for Risk Models'
+		//lseng.personas.partricipant -> lseng.appLayer.apps.diagnosticTools 					'Submits Data'
+		//lseng.personas.coach 		  -> lseng.appLayer.apps.diagnosticTools 					'Provides guidance'
 
 
 		
@@ -117,14 +123,18 @@ views {
 
 	
 
-	view mobileApp of lseng.uiLayer.mobileApp {
+	view mobileApp of lseng.uiLayer.diagnosticTools.mobileApp {
+
+		global  style diagnosticTools
+        global  style interventionTools
+        global  style ai-conversationalTools
 
 		group 'Mobile User Interface' {
-			color blue
+			color green
     		opacity 40%
     		border solid
-			include lseng.uiLayer.mobileApp
-			include element.tag = #mobileApp
+			include lseng.uiLayer.diagnosticTools.mobileApp, lseng.uiLayer.diagnosticTools.mobileApp.*
+			//include element.tag = #mobileApp
 			
 		}
 		include lseng.uiLayer.mobileApp with {
@@ -137,30 +147,22 @@ views {
 
 	view mobileApps-l3 of lseng.uiLayer.mobileApp {
 		include lseng.uiLayer.mobileApp, lseng.uiLayer.mobileApp.*
+		
+		global  style diagnosticTools
+        global  style interventionTools
+        global  style ai-conversationalTools
+
 		include lseng.uiLayer.mobileApp with {
     		navigateTo mobileApp
   		}
 	}
 
-	view ai of lseng.appLayer.ai {
-
-		group 'AI Conversational Tools' {
-			color indigo
-    		opacity 40%
-    		border solid
-			include lseng.appLayer.ai
-			include element.tag = #ai-conversational-tools
-			exclude lseng.appLayer.algos
-		}
-		style * {
-    		color indigo
-  		}
-		include lseng.appLayer.ai  with {
-    		navigateTo lseng
-  		}
-	}
-
+	
 	view algos of lseng.appLayer.algos {
+
+		global  style diagnosticTools
+        global  style interventionTools
+        global  style ai-conversationalTools
 
 		group 'Algorithms' {
 			color indigo
@@ -178,34 +180,5 @@ views {
   		}
 	}
 
-	view core-apps of lseng.appLayer.apps {
-
-		group 'Core Apps' {
-			//color sky
-    		opacity 30%
-    		border solid
-			include lseng.appLayer.apps, lseng.appLayer.apps.*, 
-			        lseng.appLayer.apps.diagnostic-tools.*, lseng.appLayer.apps.interventionTools.*,
-			//include * where tag is not #algorithms and tag is not #ai-conversational-tools
-			
-		}
-
-		style lseng.appLayer.apps.diagnostic-tools {
-    		color green
-			opacity 50%
-  		}
-		style lseng.appLayer.apps.interventionTools {
-    		color amber
-			opacity 30%
-  		}
-
-
-		include lseng.appLayer.apps  with {
-    		navigateTo lseng
-  		}
-
-		global  style diagnostic-tools
-        global  style interventionTools
-        global  style ai-conversational-tools
-	}
+	
 }

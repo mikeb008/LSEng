@@ -1,6 +1,6 @@
 model {
 	
-	extend lseng.uiLayer.webApp.coaching {
+	extend lseng.appLayer.interventionTools.coaching{
 		//title 'Health Coaching Service'
 		//description 'Provides tools for health coaches'
 
@@ -69,8 +69,6 @@ model {
 			technology 'Node.js'
 			
 		}
-    
-    
 
 	}
 }

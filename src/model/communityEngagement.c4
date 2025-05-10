@@ -1,6 +1,6 @@
 model {
 	
-	extend lseng.uiLayer.webApp.community-access {
+	extend lseng.appLayer.interventionTools.community {
 		//title 'Community Engagement Service'
 		//description 'Facilitates social interaction'
 		//icon tech:nodejs

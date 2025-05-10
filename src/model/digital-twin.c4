@@ -1,6 +1,6 @@
 model {
 	
-	extend lseng.appLayer.apps.interventionTools.digitalTwin {
+	extend lseng.appLayer.interventionTools.digitalTwin {
 
 		digitalTwinService = service 'Digital Twin Service' {
 			#longevity-interventionTools, #digitalTwin

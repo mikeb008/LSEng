@@ -11,9 +11,9 @@ specification {
   tag webApp
   tag mobileApp
   tag wearables
-  tag longevity-diagnostic-tools
+  tag longevity-diagnosticTools
   tag longevity-interventionTools 
-  tag ai-conversational-tools
+  tag ai-conversationalTools
   tag algorithms
   tag personas
   tag dataLayer

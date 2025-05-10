@@ -1,6 +1,6 @@
 model {
     
-    extend lseng.uiLayer.webApp.lms {
+    extend lseng.appLayer.interventionTools.lms {
         
         contentDelivery = application 'Content Delivery' {
             #lms, #longevity-interventionTools
@@ -59,5 +59,7 @@ model {
         progressTrackingLms -> dataAccessLms        'Uses'
         quizManagement      -> dataAccessLms        'Uses'
         personalizationLms  -> dataAccessLms        'Uses'
+
+    }
 }
 

@@ -5,12 +5,12 @@ global {
     	color amber
   	}
 
-    style diagnostic-tools element.tag = #longevity-diagnostic-tools {
+    style diagnosticTools element.tag = #longevity-diagnosticTools {
     	notation "Longevity Diagnostic Tools"
     	color green
   	}
 		
-	style ai-conversational-tools element.tag = #ai-conversational-tools {
+	style ai-conversationalTools element.tag = #ai-conversationalTools {
     	notation "AI Conversational Tools"
     	color indigo
   	}

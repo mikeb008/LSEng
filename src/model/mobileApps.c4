@@ -1,10 +1,10 @@
 model {
 	
-	extend lseng.uiLayer.mobileApp {
+	extend lseng.uiLayer.diagnosticTools.mobileApp {
 
 
 		mobile-ui = component 'Mobile UI' {
-			#longevity-diagnostic-tools, #mobileApp 
+			#longevity-diagnosticTools, #mobileApp 
 			title 'Mobile UI'
 			icon tech:android
 			description '
@@ -14,7 +14,7 @@ model {
 		}
 
 		health-tracking = component 'Health Tracking' {
-			#longevity-diagnostic-tools, #mobileApp 
+			#longevity-diagnosticTools, #mobileApp 
 			title 'Health Tracking'
 			icon https://img.icons8.com/?size=96&id=OxJTtjAvociw&format=png
 			description '
@@ -24,7 +24,7 @@ model {
 		}
 
 		recommendation-engine = component 'Recommendation Engine Client' {
-			#longevity-diagnostic-tools, #mobileApp 
+			#longevity-diagnosticTools, #mobileApp 
 			title 'Recommendation Engine Client'
 			icon https://img.icons8.com/?size=48&id=85618&format=png
 			description '
@@ -34,7 +34,7 @@ model {
 		}
 		
 		goal-management = component 'Goal Management' {
-			#longevity-diagnostic-tools, #mobileApp 
+			#longevity-diagnosticTools, #mobileApp 
 			title 'Goal Management'
 			icon https://img.icons8.com/?size=100&id=20891&format=png
 			description '
@@ -44,7 +44,7 @@ model {
 		}
     	
 		wearable-integration = component 'Wearable Integration' {
-			#longevity-diagnostic-tools, #mobileApp 
+			#longevity-diagnosticTools, #mobileApp 
 			title 'Wearable Integration'
 			icon https://img.icons8.com/?size=100&id=Lbo4vGdwP79k&format=png
 			description '
@@ -54,7 +54,7 @@ model {
 		}
 
     	mobile-auth = component 'Mobile Authentication' {
-			#longevity-diagnostic-tools, #mobileApp 
+			#longevity-diagnosticTools, #mobileApp 
 			title 'Mobile Authentication'
 			icon https://img.icons8.com/?size=100&id=72708&format=png
 			description '
@@ -64,7 +64,7 @@ model {
 		}
     	
     	mobile-api = component 'Mobile API Client' {
-			#longevity-diagnostic-tools, #mobileApp 
+			#longevity-diagnosticTools, #mobileApp 
 			title 'Mobile API Client'
 			icon https://icon.icepanel.io/Technology/svg/OpenAPI.svg //tech:openapi
 			description '

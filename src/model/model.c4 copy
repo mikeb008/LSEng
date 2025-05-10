@@ -47,78 +47,66 @@ model {
 		}
 
 		uiLayer = container 'Engagement Layer' {
-			#longevity-diagnosticTools
-			
-			diagnosticTools = component 'Longevity Diagnistic Tools' {
-				#longevity-diagnosticTools
-				title 'Provides User Interface for users'
-				description 'Provides Web, Mobile & Wearables Interaface to iusers'
-				icon tech:chrome
-				style {
-					opacity 30%
-				}
-			
-				mobileApp = application 'Mobile Application' {
-					#longevity-diagnosticTools
-					title 'Mobile Application'
-					description 'Provides mobile access for individuals'
-					technology 'ios, Android'
-					icon tech:android
-				}
-				webApp = application 'Web Application' {
-					#longevity-diagnosticTools
-					title 'Web Application'
-					description 'Provides UI for users'
-					style {
-        				icon tech:chrome
-        				shape browser
-      				}
-      				technology 'React, Typescript'
-      			}
-				wearables = application 'Wearable Devices' {
-					#longevity-diagnosticTools
-					title 'Wearable Devices'
-					description 'Devices that provide biometric & activity data'
-					icon https://img.icons8.com/?size=160&id=i0iesJ3Dkgmj&format=png
-				}
-
+			title 'Provides User Interface for users'
+			description 'Provides Web, Mobile & Wearables Interaface to iusers'
+			icon tech:chrome
+			style {
+				opacity 30%
 			}
 
-				loe = application 'Longevity Optimization Engine (“LOE”)' {
-					#longevity-diagnosticTools
-					title 'Longevity Optimization Engine'
-					description '
-						A non-homogeneous, stochastic mathematical approach that simulates longevity dynamics by leveraging a 12-State markov model coupled with hierarchical Bayesian calibration. \n
-						The LOE ingests static baseline actuarial and epidemiology data sets that are modulated with participant-level dynamic (lifestyle state, health state) data.
-					'
-				}
+			mobileApp = application 'Mobile Application' {
+				#longevity-diagnosticTools
+				title 'Mobile Application'
+				description 'Provides mobile access for individuals'
+				technology 'ios, Android'
+				icon tech:android
+			}
+			webApp = application 'Web Application' {
+				#longevity-diagnosticTools
+				title 'Web Application'
+				description 'Provides UI for users'
+				style {
+        			icon tech:chrome
+        			shape browser
+      			}
+      			technology 'React, Typescript'
+      		}
+      		wearables = application 'Wearable Devices' {
+				#longevity-interventionTools
+				title 'Wearable Devices'
+				description 'Devices that provide biometric & activity data'
+				icon https://img.icons8.com/?size=160&id=i0iesJ3Dkgmj&format=png
+			}
 		}
 
 		appLayer = container 'Application Layer' {
-			#longevity-diagnosticTools
-
-			longevityTools = component 'Longevity Intervention Tools' {
-				#longevity-diagnosticTools
-				title 'Application Layer'
-				description 'Application Layer'
-				icon tech:java
-				style {
-					opacity 45%
-				}
+			title 'Application Layer'
+			description 'Application Layer'
+			icon tech:java
+			style {
+				opacity 45%
 			}
 
-			aiTools = container 'AI Conversational Tools' {
+			apps = container 'Core Apps' {
+				#longevity-interventionTools
+				title 'Core LSEng Apps'
+				description 'Core LSEng Applications'
+				icon tech:java
+
+			}
+			ai = container 'AI Apps' {
 				#ai-conversationalTools 
 				title 'AI Apps'
 				description 'Uses LLMs for narrative feedback, coaching, and intelligent conversations'
-				icon https://img.icons8.com/?size=128&id=nzIFTCUl0ZR8&format=png			
+				icon https://img.icons8.com/?size=128&id=nzIFTCUl0ZR8&format=png
+				
 			}
-		
 			algos = container 'Algorithms' {
-				#algorithms 
+				#ai-conversationalTools 
 				title 'Algorithms'
 				description 'Algorithms'
-				icon tech:the-algorithms  			
+				icon tech:the-algorithms  
+				
 			}
 		}
 
@@ -153,7 +141,7 @@ model {
 		}
 
 
-		middleware = container 'Mioddleware Layer' {
+		middleware = container 'API Layer' {
 			#longevity-diagnosticTools, #middleware
 			title 'API Layer'
 			description 'Middleare'
@@ -162,6 +150,12 @@ model {
 				opacity 45%
 			}
 
+			notificationService = component 'Notification Service' {
+				#middleware
+				title 'Notification Service'
+				description 'Handles user communication'
+				icon https://img.icons8.com/?size=100&id=7751&format=png
+			}
 		}
 
 	}

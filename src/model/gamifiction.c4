@@ -1,9 +1,11 @@
 model {
 	
-	extend lseng.uiLayer.webApp {
+	extend lseng.appLayer.interventionTools.game {
 		//title 'Gamification Service'
 		//description 'Manages gamified elements'
 
+		//gamification = container {
+			#longevity-interventionTools
 		challenge-engine = application 'Challenge Engine' {
 			#longevity-interventionTools, #gamification
 			title 'Challenge Engine'
@@ -15,7 +17,7 @@ model {
 			
 		}
 
-		reward-system = application 'Reward System' {
+		rewardSystem = application 'Reward System' {
 			#longevity-interventionTools, #gamification
 			title 'Reward System'
 			icon https://img.icons8.com/?size=100&id=37862&format=png
@@ -37,7 +39,7 @@ model {
 			
 		}
 
-		game-progress = application 'Progress Tracking' {
+		progress = application 'Progress Tracking' {
 			#longevity-interventionTools, #gamification
 			title 'Progress Tracking'
 			icon https://img.icons8.com/?size=100&id=7317&format=png
@@ -72,23 +74,24 @@ model {
     
     
     	// RELATIONS
-    	challenge-engine -> reward-system 		"Uses"
+    	challenge-engine -> rewardSystem 		"Uses"
 		challenge-engine -> leaderboard 		"Uses"
-		reward-system    -> leaderboard 		"Uses"
-		game-progress 	 -> challenge-engine 	"Uses"
-		game-progress 	 -> reward-system 		"Uses"
+		rewardSystem    -> leaderboard 		"Uses"
+		progress 	 -> challenge-engine 	"Uses"
+		progress 	 -> rewardSystem 		"Uses"
 		progress 		 -> leaderboard 		"Uses"
 		personalization  -> challenge-engine  	"Uses"
-		personalization  -> reward-system 		"Uses"
+		personalization  -> rewardSystem 		"Uses"
 		personalization  -> leaderboard 		"Uses"
 		challenge-engine -> data_access 		"Uses"
-		reward-system    -> data_access 		"Uses"
+		rewardSystem    -> data_access 		"Uses"
 		leaderboard    	 -> data_access 		"Uses"
-		game-progress 	 -> data_access 		"Uses"
+		progress 	 -> data_access 		"Uses"
 		personalization  -> data_access 		"Uses"
 
 
 	}
+	//}
 }
 
 

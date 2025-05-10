@@ -1,10 +1,9 @@
 model {
 	
-	extend lseng.uiLayer.webApp {
-		#longevity-diagnostic-tools
+	extend lseng.uiLayer.diagnosticTools.webApp {
 
 		user-interface = component 'User Interface' {
-			#webApp, #longevity-diagnostic-tools
+			#webApp, #longevity-diagnosticTools
 			title 'User Interface'
 			description '
 					Handles user interactions
@@ -15,7 +14,7 @@ model {
 		}
 
 		dashboard = component 'Dashboard' {
-			#webApp, #longevity-diagnostic-tools
+			#webApp, #longevity-diagnosticTools
 			title 'Dashboard'
 			description '
 					Displays key health and progress data
@@ -25,7 +24,7 @@ model {
 		}
 
 		intervention-manager = component 'Intervention Management' {
-			#webApp, #longevity-diagnostic-tools
+			#webApp, #longevity-diagnosticTools
 			title 'Intervention Management'
 			description '
 					Allows users to view and manage interventions
@@ -65,7 +64,7 @@ model {
 		}
 
   		auth = component 'Authentication' {
-			#webApp, #longevity-diagnostic-tools
+			#webApp, #longevity-diagnosticTools
 			title 'Authentication'
 			icon https://img.icons8.com/?size=100&id=43482&format=png
 			description '
@@ -76,7 +75,7 @@ model {
 		}
 
 		notificationService = service 'Notification Service' {
-			#webApp, #longevity-diagnostic-tools
+			#webApp, #longevity-diagnosticTools
 			title 'Notification Service'
 			description 'Handles user communication'
 			//icon tech:facebook
@@ -85,7 +84,7 @@ model {
 		}
 
   		apiClient = service 'API Client' {
-			#webApp, #longevity-diagnostic-tools
+			#webApp, #longevity-diagnosticTools
 			title 'API Client'
 			icon https://img.icons8.com/?size=60&id=79865&format=png
 			description '
@@ -105,7 +104,7 @@ model {
 		user-interface -> auth 					"Uses"
 		user-interface -> apiClient 			"Uses"
 		user-interface -> notificationService 	"Uses"
-		apiClient     -> lseng.middleware 		"Communicates with \n[HTTPS]"
+		//apiClient     -> lseng.middleware 		"Communicates with \n[HTTPS]"
 
 	}
 

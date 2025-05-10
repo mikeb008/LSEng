@@ -1,18 +1,19 @@
 model {
 	
-	extend lseng.appLayer.ai {
+	extend lseng.appLayer.aiTools {
 
-		conversational-tools = container 'AI Conversational Tools' {
-		
+		conversationalTools = container 'AI Tools' {
+			#ai-conversationalTools
+
 			coach = component 'Longevity Coach AI' {
-				#ai-conversational-tools
+				#ai-conversationalTools
 				title 'Longevity Coach AI'
 				description 'IAI Virtual assistant offering personalized recommendations based on lifestyle and health profiles'
 				icon https://img.icons8.com/?size=100&id=62903&format=png
 			}
 
 			health-chatbot = component 'Health Literacy Chatbot' {
-				#ai-conversational-tools
+				#ai-conversationalTools
 				title 'Health Literacy Chatbot'
 				description '
 					Conversational interface providing real-time education on medical, nutritional, and lifestyle topics
@@ -21,7 +22,7 @@ model {
 			}
 
 			motivation = component 'Motivational Interviewing AI' {
-				#ai-conversational-tools
+				#ai-conversationalTools
 				title 'Motivational Interviewing AI'
 				description '
 				daptive conversation agents using motivational interviewing techniques to strengthen commitment to behavioural change
@@ -30,7 +31,7 @@ model {
 			}
 
 			moderator = component 'Community Moderator AI' {
-				#ai-conversational-tools
+				#ai-conversationalTools
 				title 'Community Moderator AI'
 				description '
 				Automated social engagement facilitator, nurturing group discussions, challenges, and recognition mechanisms
@@ -39,7 +40,7 @@ model {
 			}
 
 			behavioral-economics = component 'Behavioural Economics AI' {
-				#ai-conversational-tools
+				#ai-conversationalTools
 				title 'Behavioural Economics AI'
 				description '
 				Embedding rewards framing, loss aversion techniques, and cost (financial, emotional, psychological) nudges directly into conversational exchanges to maximize behaviour change adherence
@@ -48,7 +49,7 @@ model {
 			}
 
 			feedback = component 'Feedback Loop Integrator AI' {
-				#ai-conversational-tools
+				#ai-conversationalTools
 				title 'Feedback Loop Integrator AI'
 				description '
 					Real-time data collector and analyzer, feeding back insights to users and dynamically adjusting intervention pathways

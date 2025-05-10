@@ -1,0 +1,46 @@
+views {
+
+    view  core-apps of lseng.uiLayer.diagnosticTools{
+
+		//group 'Core Apps' {
+			//color sky
+    	//	opacity 30%
+    	//	border solid
+		//	include lseng.appLayer.apps, lseng.appLayer.apps.*, 
+		//	        lseng.appLayer.apps.diagnosticTools.*, lseng.appLayer.apps.interventionTools.*,
+			//include * where tag is not #algorithms and tag is not #ai-conversationalTools
+			
+		//}
+
+		include lseng.uiLayer.diagnosticTools, lseng.uiLayer.diagnosticTools.*
+		
+		//style lseng.uiLayer.diagnosticTools {
+    	//	color green
+		//	opacity 50%
+  		//}
+		//style lseng.appLayer.interventionTools {
+    	//	color amber
+		//	opacity 30%
+  		//}
+
+
+		include lseng.uiLayer.diagnosticTools  with {
+    		navigateTo lseng
+  		}
+
+
+        //include lseng.appLayer.apps.lms with {
+        //    navigateTo core-apps 
+        //}
+        
+        //include lseng.appLayer.apps.coaching with {
+        //    navigateTo core-apps 
+        //}
+        
+        global  style interventionTools
+        global  style ai-conversationalTools
+		global  style diagnosticTools
+	}
+
+    
+}

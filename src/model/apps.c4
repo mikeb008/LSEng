@@ -1,39 +1,47 @@
 model {
 	
-	extend lseng.appLayer.apps {
+	extend lseng.appLayer {
 
-		diagnostic-tools = container 'Longevity Diagnostic Tools' {
+		diagnosticTools = container 'Longevity Diagnostic Tools' {
 			onboarding = component 'Onboarding' {
-				#longevity-diagnostic-tools
+				#longevity-diagnosticTools
 				title 'Onboarding'
 				description ''
 				icon https://img.icons8.com/?size=160&id=JNOv2Xlxz9K3&format=png
 			}
 
 			survey = component 'Survey' {
-				#longevity-diagnostic-tools
+				#longevity-diagnosticTools
 				title 'Surveys'
 				description 'Collects self-reported lifestyle and health info'
 				icon https://img.icons8.com/?size=100&id=7751&format=png
 			}
 
 			hl7 = component 'HL7' {
-				#longevity-diagnostic-tools
+				#longevity-diagnosticTools
 				title 'Hl7'
 				description 'Interfaces with medical systems to collect standardized health data'
 				icon https://images.icon-icons.com/37/PNG/96/clinical_medical_3912.png
 			}
 
 			ingestion = component 'Public Data Ingestion' {
-				#longevity-diagnostic-tools
+				#longevity-diagnosticTools
 				title 'Public Data Ingestion'
 				description 'Supplies population-level datasets for benchmarking and model enrichment'
 				icon https://img.icons8.com/?size=160&id=0Ni5Auk1wGUQ&format=png
 			}
 
+			notificationService = component 'Notification Service' {
+				#longevity-diagnosticTools
+				title 'Notification Service'
+				description 'Handles user communication'
+				icon https://img.icons8.com/?size=100&id=7751&format=png
+			}
+
 		}
 
 		interventionTools = container 'Longevity Intervention Tools' {
+			#longevity-interventionTools
 			lms = component 'LMS' {
 				#longevity-interventionTools
 				title 'Lifestyle Intervention Education LMS'
