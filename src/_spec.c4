@@ -24,6 +24,7 @@ specification {
   tag digitalTwin
   tag coaching
   tag notifications
+  tag securityLayer
 
   element actor {
     style {

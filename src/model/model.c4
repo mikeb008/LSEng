@@ -81,17 +81,15 @@ model {
 					description 'Devices that provide biometric & activity data'
 					icon https://img.icons8.com/?size=160&id=i0iesJ3Dkgmj&format=png
 				}
-
+				dashboards = application 'Partner Dashboards' {
+					#longevity-diagnosticTools
+					title 'Partner Dashboards'
+					description 'Devices that provide biometric & activity data'
+					icon https://img.icons8.com/?size=100&id=92zOGOmxGkWj&format=png
+				}
 			}
 
-				loe = application 'Longevity Optimization Engine (“LOE”)' {
-					#longevity-diagnosticTools
-					title 'Longevity Optimization Engine'
-					description '
-						A non-homogeneous, stochastic mathematical approach that simulates longevity dynamics by leveraging a 12-State markov model coupled with hierarchical Bayesian calibration. \n
-						The LOE ingests static baseline actuarial and epidemiology data sets that are modulated with participant-level dynamic (lifestyle state, health state) data.
-					'
-				}
+				
 		}
 
 		appLayer = container 'Application Layer' {
@@ -100,10 +98,22 @@ model {
 			longevityTools = component 'Longevity Intervention Tools' {
 				#longevity-diagnosticTools
 				title 'Application Layer'
-				description 'Application Layer'
+				description '
+					Lifestyle Rating Engine\n
+					Health Rating Engine\n
+					Data Integration Hub
+				'
 				icon tech:java
 				style {
 					opacity 45%
+				}
+				loe = application 'Longevity Optimization Engine (“LOE”)' {
+					#longevity-diagnosticTools
+					title 'Longevity Optimization Engine'
+					description '
+						A non-homogeneous, stochastic mathematical approach that simulates longevity dynamics by leveraging a 12-State markov model coupled with hierarchical Bayesian calibration. \n
+						The LOE ingests static baseline actuarial and epidemiology data sets that are modulated with participant-level dynamic (lifestyle state, health state) data.
+					'
 				}
 			}
 
@@ -114,15 +124,28 @@ model {
 				icon https://img.icons8.com/?size=128&id=nzIFTCUl0ZR8&format=png			
 			}
 		
-			algos = container 'Algorithms' {
+			algos = container 'Behavioral Modification Tools' {
 				#algorithms 
-				title 'Algorithms'
-				description 'Algorithms'
+				title 'Behavioral Modification Tools'
+				description '
+					Digital interventions for lifestyle improvement\n
+					Coaching and education platforms\n
+					Community engagement applications
+				'
 				icon tech:the-algorithms  			
+			}
+
+			loe = application 'Longevity Optimization Engine (“LOE”)' {
+				#longevity-diagnosticTools
+				title 'Longevity Optimization Engine'
+				description '
+						A non-homogeneous, stochastic mathematical approach that simulates longevity dynamics by leveraging a 12-State markov model coupled with hierarchical Bayesian calibration. \n
+						The LOE ingests static baseline actuarial and epidemiology data sets that are modulated with participant-level dynamic (lifestyle state, health state) data.
+				'
 			}
 		}
 
-		dataLayer = container 'Application Layer' {
+		dataLayer = container 'Data Layer' {
 			#longevity-diagnosticTools
 			title 'Data Layer'
 			description 'Data Layer'
@@ -144,15 +167,61 @@ model {
 				description 'Centralized storage for structured, semi-structured, and unstructured data'
 				icon https://img.icons8.com/?size=160&id=SyhP1mfNSqQs&format=png //tech:postgresql
 			}
-			blockchain = component 'Block Chain' {
+
+			dataIngestion = component 'Data Ingestion Analytics Engine' {
 				#dataLayer, #longevity-interventionTools 
+				title 'Data Ingestion Analytics Engine'
+				description '
+					ETL Pipeline: Transforms raw data into usable formats\n
+					Stream Processing: Handles real-time data flows\n
+					Connector Framework: Standardized interfaces for data sources\n
+					Data Validation: Ensures data quality and integrity
+				'
+				icon https://img.icons8.com/?size=160&id=0Ni5Auk1wGUQ&format=png
+			}
+
+			dataProcessing = database 'Data Processing' {
+				#dataLayer, #longevity-diagnosticTools
+				title 'Data Lake'
+				description 'Real-time processing capabilities, scalability'
+				icon https://img.icons8.com/?size=160&id=hucPfS4R8255&format=png
+			}
+		}
+
+		securityLayer = container 'Security  and Compliance Layer' {
+			#securityLayer, #longevity-diagnosticTools
+
+			blockchain = component 'Block Chain' {
+				#securityLayer, #longevity-diagnosticTools
 				title 'Block Chain'
 				description 'Provides tamper-proof logs of consent, data provenance, and transactions.'
 				icon https://img.icons8.com/?size=100&id=84734&format=png 
 			}
+
+			dataEncryption = component 'Data Encryption' {
+				#securityLayer, #longevity-diagnosticTools
+				title 'Data Encryption'
+				description '
+					Key Management: Secures and rotates encryption keys\n
+					Transport Security: Protects data in transit\n
+					Storage Encryption: Secures data at rest
+				'
+				icon https://img.icons8.com/?size=100&id=11352&format=png
+			}
+
+			compliance = component 'Identity, Audit, Compliance, Monitoring' {
+				#securityLayer, #longevity-diagnosticTools
+				title 'Identity, Audit, Compliance Access Management Monitoring'
+				description '
+					Activity Logger: Records system actions\n
+					Compliance Scanner: Checks against regulatory requirements\n
+					Anomaly Detection: Identifies unusual behavior\n
+					Reporting Engine: Generates compliance documentation
+				'
+				icon https://img.icons8.com/?size=100&id=11352&format=png
+			}
+
 		}
-
-
 		middleware = container 'Mioddleware Layer' {
 			#longevity-diagnosticTools, #middleware
 			title 'API Layer'
@@ -170,6 +239,7 @@ model {
 	lseng.uiLayer 	 -> lseng.middleware 
 	lseng.middleware -> lseng.appLayer 
 	lseng.middleware -> lseng.dataLayer 
+	lseng.dataLayer  -> lseng.securityLayer
 }
 
 
