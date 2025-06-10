@@ -5,8 +5,8 @@ views {
         global  style phase3
 
 		group 'Browser User Interface' {
-			color blue
-    		opacity 40%
+			color green
+    		opacity 30%
     		border solid
 			include lseng.uiLayer.webApp
 			include element.tag = #webApp
@@ -31,7 +31,7 @@ views {
         global  style phase3
 
         group 'Web User Interface' {
-			//color blue
+			color green
     		opacity 40%
     		border solid
 			include lseng.uiLayer.diagnosticTools.webApp, lseng.uiLayer.diagnosticTools.webApp.*
@@ -54,7 +54,7 @@ views {
 	}
 
     view webApp-lms of lseng.uiLayer.webApp.lms {
-        global  style diagnosticTools
+        //global  style diagnosticTools
         include lseng.appLayer.interventionTools.lms, lseng.appLayer.interventionTools.lms.*
         
         //exclude lseng.uiLayer.diagnosticTools.webApp
@@ -105,7 +105,7 @@ views {
     }
 
     view webApp-community of lseng.uiLayer.webApp.community-access {
-        global  style interventionTools
+       // global  style interventionTools
 
         include lseng.appLayer.interventionTools.community, lseng.appLayer.interventionTools.community.*
         style lseng.uiLayer.webApp.community-access {
