@@ -1,0 +1,38 @@
+model {
+	
+	extend lseng.appLayer.analyticsEngine.aiTools {
+
+        nlu = application 'Natural Language Understanding (NLU)' {
+            #phase3, #LSEngAnalyticsEngine, #ai-conversationalTools
+            title 'Natural Language Understanding (NLU)'
+            description 'Processes input across languages and behavioral cues'
+            icon https://img.icons8.com/?size=50&id=30633&format=png
+		}
+
+        dms = application 'Dialogue Management System' {
+            #phase3, #LSEngAnalyticsEngine, #ai-conversationalTools
+            title 'Dialogue Management System '
+            description 'Manages conversations using engagement history'
+            icon https://img.icons8.com/?size=50&id=58760&format=png
+		}
+
+		bra = component 'Behavioral Reinforcement Algorithms' {
+			#phase3, #LSEngAnalyticsEngine, #ai-conversationalTools
+			title 'Behavioral Reinforcement Algorithms'
+			description '
+                Uses nudges and motivational techniques
+			'
+			icon https://img.icons8.com/?size=160&id=ocJ4KYwIezyB&format=png
+		}
+
+		iwit = component 'Integration with Intervention Toolset' {
+			#phase3, #LSEngAnalyticsEngine, #ai-conversationalTools
+			title 'Integration with Intervention Toolset'
+			description '
+                Offers 24/7 support and triage to human agents
+			'
+			icon https://img.icons8.com/?size=160&id=ocJ4KYwIezyB&format=png
+		}
+    }
+
+}

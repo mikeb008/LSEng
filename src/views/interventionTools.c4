@@ -1,0 +1,74 @@
+views {
+
+    view  interventionTools of lseng.appLayer.analyticsEngine.interventionTools {
+
+        include lseng.appLayer.analyticsEngine.interventionTools, 
+                lseng.appLayer.analyticsEngine.interventionTools.interventionTools,
+                lseng.appLayer.analyticsEngine.interventionTools.interventionTools2
+
+		include lseng.appLayer.analyticsEngine.interventionTools  with {
+    		navigateTo lseng
+  		}
+        include lseng.appLayer.analyticsEngine.interventionTools.interventionTools  with {
+    		navigateTo intTools
+  		}
+
+        global  style phase1
+        global  style phase2
+        global  style phase3
+
+        style lseng.appLayer.analyticsEngine.interventionTools {
+    		color slate
+			opacity 30%
+  		}
+
+    }
+
+    view intTools of lseng.appLayer.analyticsEngine.interventionTools.interventionTools {
+        include lseng.appLayer.analyticsEngine.interventionTools, 
+                lseng.appLayer.analyticsEngine.interventionTools.lms, lseng.appLayer.analyticsEngine.interventionTools.coaching,
+                lseng.appLayer.analyticsEngine.interventionTools.community, lseng.appLayer.analyticsEngine.interventionTools.game,
+                lseng.appLayer.analyticsEngine.interventionTools.bee, lseng.appLayer.analyticsEngine.interventionTools.digitalTwin,
+                lseng.appLayer.analyticsEngine.interventionTools.bra, lseng.appLayer.analyticsEngine.interventionTools.apa
+
+        global  style phase1
+        global  style phase2
+        global  style phase3
+
+        style lseng.appLayer.analyticsEngine.interventionTools.interventionTools {
+    		color slate
+			opacity 30%
+  		}
+
+        include lseng.appLayer.analyticsEngine.interventionTools.interventionTools  with {
+    		navigateTo interventionTools
+  		}
+    }
+
+    view intTools2 of lseng.appLayer.analyticsEngine.interventionTools.interventionTools2 {
+        include lseng.appLayer.analyticsEngine.interventionTools.interventionTools2, 
+                lseng.appLayer.analyticsEngine.interventionTools.interventionTools2.survey,
+                lseng.appLayer.analyticsEngine.interventionTools.interventionTools2.bta,
+                lseng.appLayer.analyticsEngine.interventionTools.interventionTools2.clustering,
+                lseng.appLayer.analyticsEngine.interventionTools.interventionTools2.drl,
+                lseng.appLayer.analyticsEngine.interventionTools.interventionTools2.cim,
+                lseng.appLayer.analyticsEngine.interventionTools.interventionTools2.hrms,
+                lseng.appLayer.analyticsEngine.interventionTools.interventionTools2.rst,
+                lseng.appLayer.analyticsEngine.interventionTools.interventionTools2.its,
+                lseng.appLayer.analyticsEngine.interventionTools.interventionTools2.feedback
+
+        global  style phase1
+        global  style phase2
+        global  style phase3
+
+        style lseng.appLayer.analyticsEngine.interventionTools.interventionTools2 {
+    		color slate
+			opacity 30%
+  		}
+
+        include lseng.appLayer.analyticsEngine.interventionTools.interventionTools2  with {
+    		navigateTo interventionTools
+  		}
+    }
+
+}

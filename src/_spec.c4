@@ -13,7 +13,9 @@ specification {
   tag wearables
   tag longevity-diagnosticTools
   tag longevity-interventionTools 
+  tag longevity-interventionTools2
   tag ai-conversationalTools
+  tag dashboardTools
   tag algorithms
   tag personas
   tag dataLayer
@@ -25,6 +27,11 @@ specification {
   tag coaching
   tag notifications
   tag securityLayer
+  tag phase1
+  tag phase2
+  tag phase3
+  tag LSEngAnalyticsEngine
+  tag etlAnalyticsTools
 
   element actor {
     style {

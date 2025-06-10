@@ -1,0 +1,23 @@
+views {
+
+    view  optimizationTools of lseng.appLayer.analyticsEngine.optimizationTools {
+
+        include lseng.appLayer.analyticsEngine.optimizationTools, 
+                lseng.appLayer.analyticsEngine.optimizationTools.cse, lseng.appLayer.analyticsEngine.optimizationTools.cdm,
+                lseng.appLayer.analyticsEngine.optimizationTools.oss, lseng.appLayer.analyticsEngine.optimizationTools.iem
+		include lseng.appLayer.analyticsEngine.optimizationTools  with {
+    		navigateTo lseng
+  		}
+
+        global  style phase1
+        global  style phase2
+        global  style phase3
+
+        style lseng.appLayer.analyticsEngine.optimizationTools {
+    		color green
+			opacity 30%
+  		}
+
+    }
+
+}

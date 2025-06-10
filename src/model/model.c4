@@ -4,18 +4,19 @@ model {
 		description 'Provides a platform for longevity & NCD risk management'
 
 		personas = container 'LSEng Personas' {
-			#longevity-diagnosticTools
+			#longevity-diagnosticTools, #phase1
 			title 'Engagement layer'
 			icon https://img.icons8.com/?size=100&id=122809&format=png
 			description 'Delivers insights and actions via educational, coaching, community engagement, and gamified applications'
 			style {
 				opacity 45%
 			}
-			partricipant = person 'Partricipant' {
-				#longevity-diagnosticTools, #personas
-				title 'Partricipant'
+			member = person 'Member' {
+				#longevity-diagnosticTools, #personas, #phase1
+				title 'Member'
 				description 'Want to improve their health & longetvity'
 			}
+			/*----------------------------
 			clinician = person 'Clinician' {
 				#longevity-diagnosticTools, #personas
 				title '
@@ -26,22 +27,23 @@ model {
 				//-> lseng.appLayer.apps.hl7 'Submits Health data'
 				
 			}
+			-------------------------------*/
 			custodian = person 'Custodian' {
-				#longevity-interventionTools, #personas
+				#longevity-diagnosticTools, #personas, #phase1
 				title 'Custodian/Client'
 				description '
 					Institutional user (managing longevity risk) e.g. Financial (Bank, Pension Fund, Insurance company), Health (Clinic, NHS, etc.)
 				'
 			}
-			coach = person 'Coach' {
-				#longevity-interventionTools, #personas
+			memberAdvisor = person 'Member Advisor' {
+				#ai-conversationalTools, #personas, #phase1
 				title 'Wellness coaches'
-				description 'AWellness coaches guiding users'
+				description 'Wellness coaches guiding users\nthis could be Coach, Community Leader etc.'
 			}
-			actuary = person 'Actuary' {
-				#longevity-interventionTools, #personas
-				title 'Actuary'
-				description 'Uses LOE for Risk Models'
+			custodianAdvisor = person 'Custodian Advisor' {
+				#longevity-diagnosticTools, #personas, #phase1
+				title 'Custodian Advisor'
+				description 'Uses LOE for Risk Models\nthis could be Actuary, Accountant, Regulator etc.'
 			}
 			
 		}
@@ -59,14 +61,14 @@ model {
 				}
 			
 				mobileApp = application 'Mobile Application' {
-					#longevity-diagnosticTools
+					#phase1 //#longevity-diagnosticTools
 					title 'Mobile Application'
 					description 'Provides mobile access for individuals'
 					technology 'ios, Android'
 					icon tech:android
 				}
 				webApp = application 'Web Application' {
-					#longevity-diagnosticTools
+					#phase1 //#longevity-diagnosticTools
 					title 'Web Application'
 					description 'Provides UI for users'
 					style {
@@ -76,15 +78,17 @@ model {
       				technology 'React, Typescript'
       			}
 				wearables = application 'Wearable Devices' {
-					#longevity-diagnosticTools
+					#phase2 //#longevity-diagnosticTools
 					title 'Wearable Devices'
 					description 'Devices that provide biometric & activity data'
 					icon https://img.icons8.com/?size=160&id=i0iesJ3Dkgmj&format=png
 				}
 				dashboards = application 'Partner Dashboards' {
-					#longevity-diagnosticTools
+					#phase1 //#longevity-diagnosticTools
 					title 'Partner Dashboards'
-					description 'Devices that provide biometric & activity data'
+					description '
+						Provides customized views and tools for different organizational stakeholders, enabling them to leverage LSEng data and functionality to achieve their specific goals related to longevity risk management
+					'
 					icon https://img.icons8.com/?size=100&id=92zOGOmxGkWj&format=png
 				}
 			}
@@ -95,6 +99,100 @@ model {
 		appLayer = container 'Application Layer' {
 			#longevity-diagnosticTools
 
+			//*------------------------------------
+			analyticsEngine = container 'LSEng Analytics Engine' {
+				#LSEngAnalyticsEngine
+				title 'LSEng Analytics Engine'
+				description '
+					The LSEng Analytics Engine is a containerized modular system that integrates six distinct toolsets designed to work synergistically.\n
+					Each toolset provides core functionality in a specific domain, while collectively contributing to a unified longevity-focused risk and health management platform.
+				'
+				icon https://images.icon-icons.com/561/PNG/96/analytics-graphic-on-screen_icon-icons.com_53823.png
+				style {
+					color blue
+					opacity 35%
+				}
+
+				etlAnalyticsTools = container 'ETL Analytics Tools' {
+					#phase1, ,#LSEngAnalyticsEngine, #etlAnalyticsTools
+					title 'ETL Analytics Tools'
+					description '
+						Acts as the foundational data processing layer, responsible for extracting, cleaning, transforming, and loading raw data from multiple sources into structured formats usable by the analytics toolsets.
+					'
+					icon https://img.icons8.com/?size=80&id=QgHDcfNyvVw9&format=png
+
+				}
+
+				diagnosticTools = container 'Longevity Diagnostic Tools' {
+					#phase1, #LSEngAnalyticsEngine
+					title 'Longevity Diagnostic Tools'
+					description 'Integrates biomarker and lifestyle data to classify individuals into health-longevity risk categories and drive analytic scoring algorithms.'
+					icon https://image.shutterstock.com/image-vector/computer-diagnostics-icon-laptop-test-150nw-285028001.jpg
+				}
+
+				optimizationTools = component 'Longevity Optimization Tools' {
+					#phase1, #LSEngAnalyticsEngine
+					title 'Longevity Optimization Tools'
+					description '
+						Translates diagnostic insights into personalized and cohort-based health and financial longevity solutions tailored to long-term outcome projections.\n 
+						Transforms longevity risk profiling into longevity assets and solutions.
+					'
+					icon https://image.shutterstock.com/image-vector/stethoscope-icon-medical-health-care-150nw-285949886.jpg
+					style {
+						opacity 45%
+					}
+				}
+
+				interventionTools = container 'Longevity Interevention Tools' {
+					#phase2, #LSEngAnalyticsEngine, #longevity-interventionTools
+					title 'Longevity Intervention Tools'
+					//icon https://img.icons8.com/?size=50&id=8959&format=png
+
+					interventionTools = container 'Intervention Tools' {
+						#phase2, #LSEngAnalyticsEngine, #longevity-interventionTools
+						title 'Intervention Tools'
+						description '
+							Delivers’ behavior change interventions through structured educational content, coaching protocols, and community engagement strategies.
+						'
+						icon https://img.icons8.com/?size=50&id=8959&format=png
+						style {
+							opacity 45%
+						}
+					}
+
+					interventionTools2 = container 'Intervention Tools - (Psychographic Clustering)' {
+						#phase2, #LSEngAnalyticsEngine, #longevity-interventionTools
+						title 'Intervention Tools - (Psychographic Clustering)'
+						description '
+							This module is essential for bridging static personality-driven segmentation with dynamic behavioral personalization, creating a hybrid diagnostic-intervention continuum.
+						'
+						icon https://img.icons8.com/?size=80&id=jdQXyQBxjsq5&format=png
+						style {
+							opacity 45%
+						}
+					}
+				}
+
+				aiTools = container 'AI Conversational Tools' { 
+					#phase3, #LSEngAnalyticsEngine, #ai-conversationalTools 
+					title 'AI Conversational Tools'
+					description '
+						Implements AI-driven conversational interfaces to support engagement, coaching, and ustained behavior modification through natural interaction
+					'
+					icon https://img.icons8.com/?size=128&id=nzIFTCUl0ZR8&format=png			
+				}
+
+				dashboardTools = container 'Dashboard Analytics Tools' {
+					#phase1, #LSEngAnalyticsEngine
+					title 'Dashboard Analytics Tools'
+					description 'Visualizes and reports aggregated outputs from all analytics modules, tailored to stakeholder-specific needs.'
+					icon https://img.icons8.com/?size=128&id=nzIFTCUl0ZR8&format=png			
+				}
+
+			}
+		}
+			//-------------------------------------*/
+			/*------------------------------------
 			longevityTools = component 'Longevity Intervention Tools' {
 				#longevity-diagnosticTools
 				title 'Application Layer'
@@ -144,9 +242,10 @@ model {
 				'
 			}
 		}
+		--------------------------------------------*/
 
 		dataLayer = container 'Data Layer' {
-			#longevity-diagnosticTools
+			#phase1 //#longevity-diagnosticTools
 			title 'Data Layer'
 			description 'Data Layer'
 			icon https://img.icons8.com/?size=100&id=8305&format=png //tech:postgresql
@@ -155,22 +254,22 @@ model {
 			}
 
 			db = database 'Data Store'{
-				#dataLayer, #longevity-diagnosticTools
+				#phase1, #dataLayer, #longevity-diagnosticTools
 				title 'Data Store'
 				icon tech:postgresql
 
 			}
 
 			datalake = database 'Data lake' {
-				#dataLayer, #longevity-diagnosticTools
+				#phase1, #dataLayer, #longevity-diagnosticTools
 				title 'Data Lake'
 				description 'Centralized storage for structured, semi-structured, and unstructured data'
 				icon https://img.icons8.com/?size=160&id=SyhP1mfNSqQs&format=png //tech:postgresql
 			}
 
-			dataIngestion = component 'Data Ingestion Analytics Engine' {
-				#dataLayer, #longevity-interventionTools 
-				title 'Data Ingestion Analytics Engine'
+			dataIngestion = component 'ELT Analytics Tools' {
+				#phase1, #dataLayer, #longevity-interventionTools 
+				title 'ELT Analytics Tools'
 				description '
 					ETL Pipeline: Transforms raw data into usable formats\n
 					Stream Processing: Handles real-time data flows\n
@@ -181,7 +280,7 @@ model {
 			}
 
 			dataProcessing = database 'Data Processing' {
-				#dataLayer, #longevity-diagnosticTools
+				#phase1, #dataLayer, #longevity-diagnosticTools
 				title 'Data Lake'
 				description 'Real-time processing capabilities, scalability'
 				icon https://img.icons8.com/?size=160&id=hucPfS4R8255&format=png
@@ -189,17 +288,17 @@ model {
 		}
 
 		securityLayer = container 'Security  and Compliance Layer' {
-			#securityLayer, #longevity-diagnosticTools
+			#phase1, #securityLayer, #longevity-diagnosticTools
 
 			blockchain = component 'Block Chain' {
-				#securityLayer, #longevity-diagnosticTools
+				#phase1, #securityLayer, #longevity-diagnosticTools
 				title 'Block Chain'
 				description 'Provides tamper-proof logs of consent, data provenance, and transactions.'
 				icon https://img.icons8.com/?size=100&id=84734&format=png 
 			}
 
 			dataEncryption = component 'Data Encryption' {
-				#securityLayer, #longevity-diagnosticTools
+				#phase1, #securityLayer, #longevity-diagnosticTools
 				title 'Data Encryption'
 				description '
 					Key Management: Secures and rotates encryption keys\n
@@ -210,7 +309,7 @@ model {
 			}
 
 			compliance = component 'Identity, Audit, Compliance, Monitoring' {
-				#securityLayer, #longevity-diagnosticTools
+				#phase1, #securityLayer, #longevity-diagnosticTools
 				title 'Identity, Audit, Compliance Access Management Monitoring'
 				description '
 					Activity Logger: Records system actions\n
@@ -222,8 +321,9 @@ model {
 			}
 
 		}
+
 		middleware = container 'Mioddleware Layer' {
-			#longevity-diagnosticTools, #middleware
+			#phase1, #longevity-diagnosticTools, #middleware
 			title 'API Layer'
 			description 'Middleare'
 			icon aws:api-gateway  //tech:postgresql
@@ -240,6 +340,7 @@ model {
 	lseng.middleware -> lseng.appLayer 
 	lseng.middleware -> lseng.dataLayer 
 	lseng.dataLayer  -> lseng.securityLayer
+
 }
 
 

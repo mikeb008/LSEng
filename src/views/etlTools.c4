@@ -1,0 +1,24 @@
+views {
+
+    view  etlTools of lseng.appLayer.analyticsEngine.etlAnalyticsTools {
+
+        include lseng.appLayer.analyticsEngine.etlAnalyticsTools, 
+                lseng.appLayer.analyticsEngine.etlAnalyticsTools.connectors, lseng.appLayer.analyticsEngine.etlAnalyticsTools.qaChecks,
+                lseng.appLayer.analyticsEngine.etlAnalyticsTools.schemaHarmonizationEngine, lseng.appLayer.analyticsEngine.etlAnalyticsTools.anonymizationTokenization,
+                lseng.appLayer.analyticsEngine.etlAnalyticsTools.dataFeeds, lseng.appLayer.analyticsEngine.etlAnalyticsTools.pipelines
+		include lseng.appLayer.etlAnalyticsTools  with {
+    		navigateTo lseng
+  		}
+
+        global  style phase1
+        global  style phase2
+        global  style phase3
+
+        style lseng.appLayer.analyticsEngine.etlAnalyticsTools {
+    		color green
+			opacity 30%
+  		}
+
+    }
+
+}

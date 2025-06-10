@@ -1,8 +1,9 @@
 views {
     view webApp of lseng.uiLayer.webApp {
-        global  style diagnosticTools
-        global  style interventionTools
-        global  style ai-conversationalTools
+        global  style phase1
+        global  style phase2
+        global  style phase3
+
 		group 'Browser User Interface' {
 			color blue
     		opacity 40%
@@ -25,9 +26,9 @@ views {
 	}
 
 	view webApps-l3 of lseng.uiLayer.diagnosticTools.webApp {
-		global  style diagnosticTools
-        global  style interventionTools
-        global  style ai-conversationalTools
+		global  style phase1
+        global  style phase2
+        global  style phase3
 
         group 'Web User Interface' {
 			//color blue
@@ -61,9 +62,9 @@ views {
             opacity 50%
         }
 
-        global  style diagnosticTools
-        global  style interventionTools
-        global  style ai-conversationalTools
+        global  style phase1
+        global  style phase2
+        global  style phase3
         
         include lseng.appLayer.interventionTools.lms with {
     		navigateTo webApp
@@ -79,9 +80,9 @@ views {
             opacity 50%
         }
 
-        global  style diagnosticTools
-        global  style interventionTools
-        global  style ai-conversationalTools
+        global  style phase1
+        global  style phase2
+        global  style phase3
         
         include lseng.appLayer.interventionTools.coaching with {
     		navigateTo webApp
@@ -94,9 +95,9 @@ views {
             opacity 50%
         }
 
-        global  style diagnosticTools
-        global  style interventionTools
-        global  style ai-conversationalTools
+        global  style phase1
+        global  style phase2
+        global  style phase3
         
         include lseng.uiLayer.webApp with {
     		navigateTo webApp
@@ -111,8 +112,9 @@ views {
             opacity 50%
         }
 
-        global  style diagnosticTools
-        global  style ai-conversationalTools
+        global  style phase1
+        global  style phase2
+        global  style phase3
 
          style lseng.appLayer.interventionTools.community {
             opacity 30%
@@ -123,9 +125,9 @@ views {
     }
 
     view webApp-notification of lseng.uiLayer.webApp.notificationService {
-        global  style interventionTools
-        global  style diagnosticTools
-        global  style ai-conversationalTools
+        global  style phase1
+        global  style phase2
+        global  style phase3
 
         include lseng.uiLayer.webApp.notificationService, lseng.uiLayer.webApp.notificationService.*
         style lseng.uiLayer.webApp.coaching {
@@ -141,9 +143,9 @@ views {
     }
 
     view webApp-intervention-tool of lseng.appLayer.apps.interventionTools {
-        global  style diagnosticTools
-        global  style interventionTools
-        global  style ai-conversationalTools
+        global  style phase1
+        global  style phase2
+        global  style phase3
         
         //include element.tag = #longevity-interventionTools
         include lseng.appLayer.apps.interventionTools, lseng.appLayer.apps.interventionTools.*

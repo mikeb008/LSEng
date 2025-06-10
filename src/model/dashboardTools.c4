@@ -1,0 +1,47 @@
+model {
+	
+	extend lseng.appLayer.analyticsEngine.dashboardTools {
+
+        dashboards = application 'Dynamic Dashboards' {
+            #phase2, #LSEngAnalyticsEngine, #dashboardTools
+            title 'Dynamic Dashboards '
+            description 'Real-time visualization of key longevity and health metrics'
+            icon https://img.icons8.com/?size=100&id=92zOGOmxGkWj&format=png
+		}
+
+        reporting = application 'Custom Reporting Engine' {
+            #phase2, #LSEngAnalyticsEngine, #dashboardTools
+            title 'Custom Reporting Engine'
+            description 'Stakeholder-specific reports for coaches, fund managers, etc.'
+            icon https://img.icons8.com/?size=80&id=I5VKwhMWs793&format=png
+		}
+
+        raal = application 'Analytics Aggregation Layer' {
+            #phase2, #LSEngAnalyticsEngine, #dashboardTools
+            title 'Analytics Aggregation Layer'
+            description 'Combines data from multiple tools for unified reporting'
+            icon https://images.icon-icons.com/1103/PNG/96/analytics_78917.png
+		}
+
+		userInterface = component 'User Access & Role Management' {
+			#phase2, #LSEngAnalyticsEngine, #dashboardTools
+			title 'User Access & Role Management'
+			description '
+					Tiered access to dashboards by user role.
+			'
+			icon https://img.icons8.com/?size=100&id=53450&format=png
+			
+		}
+
+		eis = component 'Export & Integration Support' {
+			#phase2, #LSEngAnalyticsEngine, #dashboardTools
+			title 'Export & Integration Support'
+			description '
+					Supports export to Excel, Power BI, Tableau, etc
+			'
+			icon https://img.icons8.com/?size=50&id=11594&format=png
+			
+		}
+    }
+
+}

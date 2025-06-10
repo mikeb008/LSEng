@@ -1,0 +1,24 @@
+views {
+
+    view  dashboardTools of lseng.appLayer.analyticsEngine.dashboardTools {
+
+        include lseng.appLayer.analyticsEngine.dashboardTools, 
+                lseng.appLayer.analyticsEngine.dashboardTools.dashboards, lseng.appLayer.analyticsEngine.dashboardTools.reporting,
+                lseng.appLayer.analyticsEngine.dashboardTools.raal, lseng.appLayer.analyticsEngine.dashboardTools.userInterface,
+                lseng.appLayer.analyticsEngine.dashboardTools.eis
+		include lseng.appLayer.analyticsEngine.dashboardTools  with {
+    		navigateTo lseng
+  		}
+
+        global  style phase1
+        global  style phase2
+        global  style phase3
+
+        style lseng.appLayer.analyticsEngine.dashboardTools {
+    		color slate
+			opacity 35%
+  		}
+
+    }
+
+}

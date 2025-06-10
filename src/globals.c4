@@ -1,5 +1,6 @@
 global {
 
+	/*---------------------------------------------------
     style interventionTools element.tag = #longevity-interventionTools {
     	notation "Longevity Intervention Tools"
     	color amber
@@ -12,6 +13,22 @@ global {
 		
 	style ai-conversationalTools element.tag = #ai-conversationalTools {
     	notation "AI Conversational Tools"
+    	color indigo
+  	}
+    ----------------------------------------------------------*/
+	
+	style phase1 element.tag = #phase1 {
+    	notation "Phase 1"
+    	color green
+  	}
+
+	style phase2 element.tag = #phase2 {
+    	notation "Phase 2"
+    	color slate
+  	}
+
+	style phase3 element.tag = #phase3 {
+    	notation "Phase 3"
     	color indigo
   	}
 }

@@ -1,16 +1,13 @@
 views {
 
- 
- 
- 
- 
  /**
   * @likec4-generated(v1)
-  * iKRoYXNo2ShiMzc1ZTMzYWEwNDRkNWFmNjVhMWJmNTI5OTE3OGY4NTcyZDI4OWViqmF1dG9MYXlvdXSBqWRpcmVjdGlvbqJUQqF40f6SoXnNASmld2lkdGjNCT+maGVpZ2h0zQnKpW5vZGVz3gAcpWxzZW5ngqFilNH+ks0BKc0JP80JZaFjw65sc2VuZy5wZXJzb25hc4KhYpTQwc0BYM0HU80BJaFjw61sc2VuZy51aUxheWVygqFilD/NAxXNBknNAYChY8OwbHNlbmcubWlkZGxld2FyZYKhYpTNArvNBRbNAUDMtKFjwq5sc2VuZy5hcHBMYXllcoKhYpTNBC3NBj3NA3zNAkWhY8OvbHNlbmcuZGF0YUxheWVygqFilNH/UM0GVM0Dos0CRaFjw7Nsc2VuZy5zZWN1cml0eUxheWVygqFilNH+us0JT80E880BF6Fjw7tsc2VuZy5wZXJzb25hcy5wYXJ0cmljaXBhbnSCoWKU
-  * 6c0Bl80BQMy0oWPCuGxzZW5nLnBlcnNvbmFzLmNsaW5pY2lhboKhYpTNAVLNAZ3NAUDMtKFjwrhsc2VuZy5wZXJzb25hcy5jdXN0b2RpYW6CoWKUzQK7zQGlzQFbzLShY8K0bHNlbmcucGVyc29uYXMuY29hY2iCoWKUzQWrzQGmzQFAzLShY8K2bHNlbmcucGVyc29uYXMuYWN0dWFyeYKhYpTNBD7NAanNAUDMtKFjwr1sc2VuZy51aUxheWVyLmRpYWdub3N0aWNUb29sc4KhYpRmzQNOzQX5zQEhoWPD2SBsc2VuZy5hcHBMYXllci5pbnRlcnZlbnRpb25Ub29sc4KhYpTNBF/NBnrNAUDMtKFjwrRsc2VuZy5hcHBMYXllci5hbGdvc4KhYpTNBg3NBnrNAXTMtKFjwrZsc2VuZy5hcHBMYXllci5haVRvb2xzgqFilM0EVc0Hps0BYMy0oWPCsmxzZW5nLmFwcExheWVyLmxv
-  * ZYKhYpTNBiPNB6bNAV7MtKFjwrJsc2VuZy5kYXRhTGF5ZXIuZGKCoWKU0KDNBpHNAUDMtKFjwrhsc2VuZy5kYXRhTGF5ZXIuZGF0YWxha2WCoWKUzQFszQaRzQFezLShY8K9bHNlbmcuZGF0YUxheWVyLmRhdGFJbmdlc3Rpb26CoWKU0f94zQe9zQGIzLShY8K+bHNlbmcuZGF0YUxheWVyLmRhdGFQcm9jZXNzaW5ngqFilM0Bbs0Hvc0BW8y0oWPCvmxzZW5nLnNlY3VyaXR5TGF5ZXIuYmxvY2tjaGFpboKhYpTR/uLNCYbNAUrMtKFjwtkibHNlbmcuc2VjdXJpdHlMYXllci5kYXRhRW5jcnlwdGlvboKhYpRjzQmKzQGAzLShY8K+bHNlbmcuc2VjdXJpdHlMYXllci5jb21wbGlhbmNlgqFilM0CDs0Jis0Bdsy0oWPC2Sdsc2VuZy51aUxheWVyLmRpYWdub3N0aWNUb29s
-  * cy5tb2JpbGVBcHCCoWKUzI7NA4XNAUDMtKFjwtkkbHNlbmcudWlMYXllci5kaWFnbm9zdGljVG9vbHMud2ViQXBwgqFilM0B9M0Djc0BQMy0oWPC2Sdsc2VuZy51aUxheWVyLmRpYWdub3N0aWNUb29scy53ZWFyYWJsZXOCoWKUzQNizQOPzQFTzLShY8LZKGxzZW5nLnVpTGF5ZXIuZGlhZ25vc3RpY1Rvb2xzLmRhc2hib2FyZHOCoWKUzQTkzQOTzQFTzLShY8KlZWRnZXOFpzF3NHhicm2ComNwkYKheM0DbaF5zQKFoXCUks0CX80CipLNAl7NAoySzQJdzQKOks0CXM0CkKZkN2wydnSComNwkYKheM0DYaF5zQTKoXCUks0DCc0FLZLNAvzNBTuSzQLwzQVIks0C5M0FVacxandtYjUwgqJjcJGCoXjNBDWhec0GD6FwlJLNAovNBhCSzQKLzQYgks0Ci80GMJLNAovNBkGm
-  * bW1iNThzgqJjcJGCoXjNASWhec0JPaFwlJLNAunNCumSzQLnzQrsks0C5c0K75LNAuLNCvOnMWM5M2ZuOYKiY3CSgqF4zQLeoXnNBdCCoXjNAmahec0GPaFwl5LNAevNBf+SzQHNzQYTks0Bsc0GLZLNAZ7NBkySzQExzQb/ks0BNM0H+JLNAUXNCJo=
+  * iKRoYXNo2Sg2YWRmZmJkMDNlMmQ4OWJmN2RmMTAyZGFlOTg1MGYzN2NhYmU0NDEwqmF1dG9MYXlvdXSBqWRpcmVjdGlvbqJUQqF40fwpoXnNAYOld2lkdGjNDlWmaGVpZ2h0zQokpW5vZGVz3gAepWxzZW5ngqFilNH8Kc0Bg80OVc0KJKFjw65sc2VuZy5wZXJzb25hc4KhYpTQi80Bus0Gas0BJKFjw61sc2VuZy51aUxheWVygqFilNH/Ic0Di80HL80BhaFjw7Bsc2VuZy5taWRkbGV3YXJlgqFilM0CJM0FyM0BQMy0oWPCrmxzZW5nLmFwcExheWVygqFilM0Eqc0HEs0Frc0CpKFjw69sc2VuZy5kYXRhTGF5ZXKCoWKU0f1azQcLzQN9zQJFoWPDs2xzZW5nLnNlY3VyaXR5TGF5ZXKCoWKU0fxRzQpbzQUnzQEkoWPDtWxzZW5nLnBlcnNvbmFzLm1lbWJlcoKhYpTQs80B
+  * 8c0BQMy0oWPCuGxzZW5nLnBlcnNvbmFzLmN1c3RvZGlhboKhYpTNAUHNAfzNAVvMtKFjwrxsc2VuZy5wZXJzb25hcy5tZW1iZXJBZHZpc29ygqFilM0Efs0CAs0BT8y0oWPCv2xzZW5nLnBlcnNvbmFzLmN1c3RvZGlhbkFkdmlzb3KCoWKUzQLozQH8zQFQzLShY8K9bHNlbmcudWlMYXllci5kaWFnbm9zdGljVG9vbHOCoWKU0f9JzQPCzQbfzQEmoWPDvmxzZW5nLmFwcExheWVyLmFuYWx5dGljc0VuZ2luZYKhYpTNBNHNB0nNBV3NAkWhY8OybHNlbmcuZGF0YUxheWVyLmRigqFilNH9i80HSM0BQMy0oWPCuGxzZW5nLmRhdGFMYXllci5kYXRhbGFrZYKhYpTR/1HNB0jNAV7MtKFjwr1sc2VuZy5kYXRhTGF5ZXIuZGF0YUluZ2VzdGlvboKhYpTR/YLNCHTNAWPMtKFj
+  * wr5sc2VuZy5kYXRhTGF5ZXIuZGF0YVByb2Nlc3NpbmeCoWKU0f9TzQh0zQFbzLShY8K+bHNlbmcuc2VjdXJpdHlMYXllci5ibG9ja2NoYWlugqFilNH8ec0Kks0BSsy0oWPC2SJsc2VuZy5zZWN1cml0eUxheWVyLmRhdGFFbmNyeXB0aW9ugqFilNH+Cs0Kls0BgMy0oWPCvmxzZW5nLnNlY3VyaXR5TGF5ZXIuY29tcGxpYW5jZYKhYpTQ2c0Ko80Bdsy0oWPC2Sdsc2VuZy51aUxheWVyLmRpYWdub3N0aWNUb29scy5tb2JpbGVBcHCCoWKU0f9xzQP6zQFAzLShY8LZJGxzZW5nLnVpTGF5ZXIuZGlhZ25vc3RpY1Rvb2xzLndlYkFwcIKhYpTNAT3NA/rNAUDMtKFjwtknbHNlbmcudWlMYXllci5kaWFnbm9zdGljVG9vbHMud2VhcmFibGVzgqFilM0Erc0EC80BU8y0oWPC
+  * 2Shsc2VuZy51aUxheWVyLmRpYWdub3N0aWNUb29scy5kYXNoYm9hcmRzgqFilM0C7M0D+c0Bccy0oWPC2TBsc2VuZy5hcHBMYXllci5hbmFseXRpY3NFbmdpbmUuZXRsQW5hbHl0aWNzVG9vbHOCoWKUzQT5zQeGzQFhzLShY8LZLmxzZW5nLmFwcExheWVyLmFuYWx5dGljc0VuZ2luZS5kaWFnbm9zdGljVG9vbHOCoWKUzQbIzQeGzQFfzLShY8LZMGxzZW5nLmFwcExheWVyLmFuYWx5dGljc0VuZ2luZS5vcHRpbWl6YXRpb25Ub29sc4KhYpTNCJbNB4bNAXDMtKFjwtkwbHNlbmcuYXBwTGF5ZXIuYW5hbHl0aWNzRW5naW5lLmludGVydmVudGlvblRvb2xzgqFilM0FAc0Iss0BQMy0oWPC2SZsc2VuZy5hcHBMYXllci5hbmFseXRpY3NFbmdpbmUuYWlUb29sc4KhYpTN
+  * Bq/NCLLNAW7MtKFjwtktbHNlbmcuYXBwTGF5ZXIuYW5hbHl0aWNzRW5naW5lLmRhc2hib2FyZFRvb2xzgqFilM0Ii80Iss0BYsy0oWPCpWVkZ2VzhacxdzR4YnJtgqJjcJGCoXjNAryhec0DT6FwlJLNAm7NAoqSzQJuzQKKks0Cbs0Ci5LNAm7NAoumZDdsMnZ0gqJjcJGCoXjNAr6hec0FVaFwlJLNAoPNBS2SzQJgzQVBks0COs0FVZLNAhXNBWenMWp3bWI1MIKiY3CRgqF4zQQCoXnNBruhcJSSzQFszQYRks0BbM0GEZLNAWzNBhGSzQFszQYRpm1tYjU4c4KiY3CRgqF40f7xoXnNCiGhcJSSzQNdzQsAks0DXM0LA5LNA1vNCwaSzQNbzQsJpzFjOTNmbjmComNwk4KheM0BuqF5zQaHgqF4zQEtoXnNBs+CoXjM96F5zQbtoXCakszMzQXYksyrzQXmksyMzQX7knjNBhmS
+  * 0NLNBw6S0N/NB7aSeM0Is5LMjc0I1pLMrM0I8ZLMzs0JBg==
   */
 	view lseng of lseng {
 		
@@ -19,25 +16,25 @@ views {
 		include lseng, lseng.*, 
 			personas, personas.*,
 			lseng.uiLayer, lseng.uiLayer.*, lseng.uiLayer.diagnosticTools, lseng.uiLayer.diagnosticTools.*, 
-			lseng.appLayer.interventionTools, lseng.appLayer.algos, lseng.appLayer.aiTools, lseng.appLayer.loe,
+			lseng.appLayer, lseng.appLayer.analyticsEngine, lseng,appLayer.etlAnalyticsTools, lseng.appLayer.analyticsEngine.diagnosticTools, lseng.appLayer.analyticsEngine.optimizationTools, lseng.appLayer.analyticsEngine.interventionTools, lseng.appLayer.analyticsEngine.aiTools, lseng.appLayer.analyticsEngine.dashboardTools,
 			lseng.dataLayer, lseng.dataLayer.*,
 			lseng.securityLayer, lseng.securityLayer.*
 
 		exclude *  ->  lseng.dataLayer.db
 		//exclude lseng.uiLayer.webApp.apiClient -> lseng.middleware 
 		
-		global  style diagnosticTools
-        global  style interventionTools
-        global  style ai-conversationalTools
+		global  style phase1
+        global  style phase2
+        global  style phase3
 		
 		style lseng.uiLayer, lseng.uiLayer.diagnosticTools {
 			opacity 40%
 		}
-		style  element.tag = #longevity-interventionTools 	{notation "Longevity Intervention Tools"}
-		style  element.tag = #longevity-diagnosticTools   	{notation "Longevity Diagnostic Tools"}
-		style  element.tag = #ai-conversationalTools 		{notation "AI Conversational Tools"}
+		//style  element.tag = #longevity-interventionTools 	{notation "Longevity Intervention Tools"}
+		//style  element.tag = #longevity-diagnosticTools   	{notation "Longevity Diagnostic Tools"}
+		//style  element.tag = #ai-conversationalTools 		{notation "AI Conversational Tools"}
 
-		autoLayout TopBottom
+		//autoLayout TopBottom
 	}
 
   
@@ -126,9 +123,9 @@ views {
 
 	view mobileApp of lseng.uiLayer.diagnosticTools.mobileApp {
 
-		global  style diagnosticTools
-        global  style interventionTools
-        global  style ai-conversationalTools
+		global  style phase1
+        global  style phase2
+        global  style phase3
 
 		group 'Mobile User Interface' {
 			color green
@@ -149,9 +146,9 @@ views {
 	view mobileApps-l3 of lseng.uiLayer.mobileApp {
 		include lseng.uiLayer.mobileApp, lseng.uiLayer.mobileApp.*
 		
-		global  style diagnosticTools
-        global  style interventionTools
-        global  style ai-conversationalTools
+		global  style phase1
+        global  style phase2
+        global  style phase3
 
 		include lseng.uiLayer.mobileApp with {
     		navigateTo mobileApp
@@ -161,9 +158,9 @@ views {
 	
 	view algos of lseng.appLayer.algos {
 
-		global  style diagnosticTools
-        global  style interventionTools
-        global  style ai-conversationalTools
+		global  style phase1
+        global  style phase2
+        global  style phase3
 
 		group 'Algorithms' {
 			color indigo

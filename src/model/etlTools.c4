@@ -1,0 +1,50 @@
+model {
+	
+	extend lseng.appLayer.analyticsEngine.etlAnalyticsTools {
+
+        connectors = application 'Data Source Connectors' {
+            #phase1, #LSEngAnalyticsEngine
+            title 'Data Source Connectors'
+            description 'Interfaces for syncing data from wearables, mobile apps, EMRs, labs, and surveys.'
+            icon https://img.icons8.com/?size=64&id=2Q6UwpQEUZ20&format=png
+		}
+
+
+        qaChecks = application 'Validation & Quality Checks' {
+            #phase1, #LSEngAnalyticsEngine
+            title 'Validation & Quality Checks'
+            description 'Performs rules-based and ML-driven anomaly detection outlier removal, and imputation'
+            icon https://img.icons8.com/?size=50&id=22855&format=png
+		}
+
+        schemaHarmonizationEngine = application 'Schema Harmonization Engine' {
+            #phase1, #LSEngAnalyticsEngine
+            title 'Schema Harmonization Engine'
+            description 'Standardizes data from diverse sources into a unified schema for analysis'
+            icon https://img.icons8.com/?size=80&id=yCkLiPyauvnr&format=png
+        }
+
+        anonymizationTokenization = application 'Anonymization & Tokenization' {
+            #phase1, #LSEngAnalyticsEngine
+            title 'Anonymization & Tokenization'
+            description 'Ensures data privacy compliance with frameworks like HIPAA, GDPR, and POPIA'
+            icon https://img.icons8.com/?size=80&id=m2tLSWw2CiQy&format=png
+        }
+
+        pipelines = application 'Pre-processing Pipelines ' {
+            #phase1, #LSEngAnalyticsEngine
+            title 'Pre-processing Pipelines'
+            description 'Executes normalization, feature engineering, derivations, and categorical encoding'
+            icon https://img.icons8.com/?size=80&id=4tsfIyU7wjGK&format=png  
+
+        }
+
+        dataFeeds = application 'Data Lake & Data Mart Feeds' {
+            #phase1, #LSEngAnalyticsEngine
+            title 'Data Lake & Data Mart Feeds'
+            description 'Stores processed data in optimized formats for downstream analytics consumption'
+        }
+
+    }
+
+}

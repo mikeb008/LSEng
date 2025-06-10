@@ -1,0 +1,23 @@
+views {
+
+    view  diagnosticTools of lseng.appLayer.analyticsEngine.diagnosticTools {
+
+        include lseng.appLayer.analyticsEngine.diagnosticTools, 
+                lseng.appLayer.analyticsEngine.diagnosticTools.dataIngestion, lseng.appLayer.analyticsEngine.diagnosticTools.lifestyleScoringAlgorithms,
+                lseng.appLayer.analyticsEngine.diagnosticTools.longevityRatingAlgorithms, lseng.appLayer.analyticsEngine.diagnosticTools.predictiveAnalyticsLayer
+		include lseng.appLayer.analyticsEngine.diagnosticTools  with {
+    		navigateTo lseng
+  		}
+
+        global  style phase1
+        global  style phase2
+        global  style phase3
+
+        style lseng.appLayer.analyticsEngine.diagnosticTools {
+    		color green
+			opacity 30%
+  		}
+
+    }
+
+}

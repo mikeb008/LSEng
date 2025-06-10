@@ -1,0 +1,45 @@
+model {
+	
+	extend lseng.appLayer.analyticsEngine.diagnosticTools {
+
+        dataIngestion = application 'Multi-dimensional Data Ingestion ' {
+            #phase1, #LSEngAnalyticsEngine, #longevity-diagnosticTools
+            title 'Multi-dimensional Data Ingestion '
+            description 'Supports structured and unstructured data inputs from wearables, clinical labs, and self-reported surveys'
+            icon https://img.icons8.com/?size=80&id=0Ni5Auk1wGUQ&format=png
+		}
+
+        lifestyleScoringAlgorithms  = application 'Lifestyle Scoring Algorithms' {
+            #phase1, #LSEngAnalyticsEngine, #longevity-diagnosticTools
+            title 'Lifestyle Scoring Algorithms'
+            description 'For each lifestyle dimension, implement lifestyle-behavior scoring based on normalized, weighted component wise attribution.'
+            icon https://img.icons8.com/?size=80&id=0Ni5Auk1wGUQ&format=png
+		}
+
+        healthScoringAlgorithms  = application 'Health Scoring Algorithms' {
+            #phase1, #LSEngAnalyticsEngine, #longevity-diagnosticTools
+            title 'Health Scoring Algorithms'
+            description 'For each health dimension, implements health scoring based on normalized, weighted component-wise attribution'
+            icon https://img.icons8.com/?size=48&id=Snx9uJedHpeA&format=png
+		}
+
+        longevityRatingAlgorithms  = application 'Longevity Ratings Algorithms' {
+            #phase1, #LSEngAnalyticsEngine, #longevity-diagnosticTools
+            title 'Longevity Ratings Algorithms'
+            description '
+                Assigns individuals to transient lifestyle-behavioral states to track progression or regression based on behavioral dynamics\n
+                Implements a high order multi-state Markov process with probabilistic transitions based on evidence-informed health state data\n
+                Classifies individuals into health/longevity bands (AAA to D), reflecting projected
+            '
+            icon https://img.icons8.com/?size=80&id=bhF7eNKuY40K&format=png
+		}
+
+
+        predictiveAnalyticsLayer   = application 'Predictive Analytics Layer' {
+            #phase1, #LSEngAnalyticsEngine, #longevity-diagnosticTools
+            title 'Predictive Analytics Layer'
+            description 'Employs Bayesian updating to refine transition probabilities based on longitudinal and time-series'
+            icon https://img.icons8.com/?size=80&id=G18h3t7UW5QW&format=png
+		}
+    }
+}

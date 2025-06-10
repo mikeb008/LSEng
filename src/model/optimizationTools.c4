@@ -1,0 +1,35 @@
+model {
+	
+	extend lseng.appLayer.analyticsEngine.optimizationTools {
+        
+        cse = application 'Cohort Segmentation Engine ' {
+            #phase1, #LSEngAnalyticsEngine
+            title 'Cohort Segmentation Engine '
+            description 'Groups participants and cohorts by longevity ratings (AAA to D) and associated risk profiling'
+            icon https://img.icons8.com/?size=80&id=NCA2Ld5HaX9p&format=png
+		}
+
+        cdm = application 'Solution Design Matrix' {
+            #phase1, #LSEngAnalyticsEngine
+            title 'Solution Design Matrix'
+            description 'Recommends Custodian Level Longevity Risk Solutions across financial and health domains'
+            icon https://img.icons8.com/?size=50&id=39235&format=png
+		}
+
+        oss = application 'Outcome Scenario Simulation' {
+            #phase1, #LSEngAnalyticsEngine
+            title 'Outcome Scenario Simulation'
+            description 'Runs projections of health and financial outcomes'
+            icon https://img.icons8.com/?size=50&id=kEVeMYYnyypM&format=png
+		}
+
+        iem = application 'Impact Evaluation Module' {
+            #phase1, #LSEngAnalyticsEngine
+            title 'Impact Evaluation Module'
+            description 'Quantifies Longevity Risk Solutions Efficacy at the Custodian Level, ROI’s etc.'
+            icon https://img.icons8.com/?size=50&id=9469&format=png
+		}
+
+    }
+
+}

@@ -1,0 +1,23 @@
+views {
+
+    view  aiTools of lseng.appLayer.analyticsEngine.aiTools {
+
+        include lseng.appLayer.analyticsEngine.aiTools, 
+                lseng.appLayer.analyticsEngine.aiTools.nlu, lseng.appLayer.analyticsEngine.aiTools.dms,
+                lseng.appLayer.analyticsEngine.aiTools.bra, lseng.appLayer.analyticsEngine.aiTools.iwit
+		include lseng.appLayer.aiTools  with {
+    		navigateTo lseng
+  		}
+
+        global  style phase1
+        global  style phase2
+        global  style phase3
+
+        style lseng.appLayer.analyticsEngine.aiTools {
+    		color indigo
+			opacity 30%
+  		}
+
+    }
+
+}
