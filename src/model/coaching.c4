@@ -1,11 +1,11 @@
 model {
 	
-	extend lseng.appLayer.interventionTools.coaching{
+	extend lseng.appLayer.analyticsEngine.interventionTools.interventionTools.coaching {
 		//title 'Health Coaching Service'
 		//description 'Provides tools for health coaches'
 
 		session-management = component 'Session Management' {
-			#longevity-interventionTools, #coaching
+			#phase2, #longevity-interventionTools, #coaching
 			title 'Session Management'
 			icon https://img.icons8.com/?size=64&id=1VFv3XHVnFVg&format=png
 			description '
@@ -16,7 +16,7 @@ model {
 		}
 
 		communicationTools = component 'Communication Tools' {
-			#longevity-interventionTools, #coaching
+			#phase2, #longevity-interventionTools, #coaching
 			title 'Communication Tools'
 			icon https://img.icons8.com/?size=100&id=54386&format=png
 			description '
@@ -27,7 +27,7 @@ model {
 		}
 
 		progress = component 'Progress Tracking' {
-			#longevity-interventionTools, #coaching
+			#phase2, #longevity-interventionTools, #coaching
 			title 'Progress Tracking'
 			icon https://img.icons8.com/?size=160&id=5bNLU6ys1X6y&format=png
 			description '
@@ -38,7 +38,7 @@ model {
 		}
 
 		reporting = component 'Reporting' {
-			#longevity-interventionTools, #coaching
+			#phase2, #longevity-interventionTools, #coaching
 			icon https://img.icons8.com/?size=100&id=57711&format=png
 			title 'Reporting'
 			description '
@@ -49,7 +49,7 @@ model {
 		}
 		
 		intervention-support = component 'Intervention Support' {
-			#longevity-interventionTools, #coaching
+			#phase2, #longevity-interventionTools, #coaching
 			title 'Intervention Support'
 			icon https://img.icons8.com/?size=160&id=odHARfEnqt3Z&format=png
 			description '
@@ -60,7 +60,7 @@ model {
 		}
     	
 		data_access = component 'Data Access' {
-			#longevity-interventionTools, #coaching
+			#phase2, #longevity-interventionTools, #coaching
 			icon https://img.icons8.com/?size=100&id=16734&format=png
 			title 'Data Access'
 			description '

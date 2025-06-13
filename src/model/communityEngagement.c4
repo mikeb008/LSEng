@@ -1,12 +1,12 @@
 model {
 	
-	extend lseng.appLayer.interventionTools.community {
+	extend lseng.appLayer.analyticsEngine.interventionTools.interventionTools.community {
 		//title 'Community Engagement Service'
 		//description 'Facilitates social interaction'
 		//icon tech:nodejs
 
 		forum-management = application 'Forum Management' {
-			#longevity-interventionTools, #community
+			#phase2, #longevity-interventionTools, #community
 			title 'Forum Management'
 			description '
 					Manages discussion forums
@@ -16,7 +16,7 @@ model {
 		}
 
 		chat-service = service 'Chat Service' {
-			#longevity-interventionTools, #community
+			#phase2, #longevity-interventionTools, #community
 			title 'Chat Service'
 			description '
 					Provides real-time chat functionality
@@ -26,7 +26,7 @@ model {
 		}
 
 		social-feed = application 'Social Feed' {
-			#longevity-interventionTools, #community
+			#phase2, #longevity-interventionTools, #community
 			title 'Social Feed'
 			description '
 					Displays community activity and updates
@@ -36,7 +36,7 @@ model {
 		}
 
 		group-management = service 'Group Management' {
-			#longevity-interventionTools, #community
+			#phase2, #longevity-interventionTools, #community
 			title 'Group Management'
 			description '
 					Allows users to create and join groups
@@ -46,7 +46,7 @@ model {
 		}
     	
 		notificationService = application 'Notification Service' {
-			#longevity-interventionTools, #community
+			#phase2, #longevity-interventionTools, #community
 			title 'Notification Service'
 			description '
 					Sends notifications about community activity
@@ -56,7 +56,7 @@ model {
 		}
     	
 		sentiment-analysis = application 'Sentiment Analysis' {
-			#longevity-interventionTools, #community
+			#phase2, #longevity-interventionTools, #community
 			title 'Sentiment Analysis'
 			description '
 					Analyzes community sentiment
@@ -66,7 +66,7 @@ model {
 		}
     	
 		data-access = service 'Data Access' {
-			#longevity-interventionTools, #community
+			#phase2, #longevity-interventionTools, #community
 			title 'Data Access'
 			description '
 					Interacts with the Data Storage

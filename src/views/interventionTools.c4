@@ -71,4 +71,90 @@ views {
   		}
     }
 
+    view lms of lseng.appLayer.analyticsEngine.interventionTools.interventionTools.lms {
+        include lseng.appLayer.analyticsEngine.interventionTools.interventionTools,
+                lseng.appLayer.analyticsEngine.interventionTools.interventionTools.lms,
+                lseng.appLayer.analyticsEngine.interventionTools.interventionTools.lms,*
+
+        include lseng.appLayer.analyticsEngine.interventionTools.interventionTools.lms with {
+          navigateTo intTools
+        }
+
+        global  style phase1
+        global  style phase2
+        global  style phase3
+
+    }
+
+    view coaching of lseng.appLayer.analyticsEngine.interventionTools.coaching {
+      include lseng.appLayer.analyticsEngine.interventionTools,
+              lseng.appLayer.analyticsEngine.interventionTools.coaching,
+              lseng.appLayer.analyticsEngine.interventionTools.coaching.*
+
+      include lseng.appLayer.analyticsEngine.interventionTools.interventionTools.coaching with {
+          navigateTo intTools
+        }
+
+        global  style phase1
+        global  style phase2
+        global  style phase3
+    }
+
+
+    view community of lseng.appLayer.analyticsEngine.interventionTools.community {
+      include lseng.appLayer.analyticsEngine.interventionTools,
+              lseng.appLayer.analyticsEngine.interventionTools.community,
+              lseng.appLayer.analyticsEngine.interventionTools.community.*
+
+      include lseng.appLayer.analyticsEngine.interventionTools.interventionTools.community with {
+          navigateTo intTools
+      }
+
+        global  style phase1
+        global  style phase2
+        global  style phase3
+    }
+
+    view gamification of lseng.appLayer.analyticsEngine.interventionTools.game {
+      include lseng.appLayer.analyticsEngine.interventionTools,
+              lseng.appLayer.analyticsEngine.interventionTools.game,
+              lseng.appLayer.analyticsEngine.interventionTools.game.*
+
+      include lseng.appLayer.analyticsEngine.interventionTools.interventionTools.game with {
+          navigateTo intTools
+      }
+
+        global  style phase1
+        global  style phase2
+        global  style phase3       
+    }
+
+    view bee of lseng.appLayer.analyticsEngine.interventionTools.bee {
+      include lseng.appLayer.analyticsEngine.interventionTools,
+              lseng.appLayer.analyticsEngine.interventionTools.bee,
+              lseng.appLayer.analyticsEngine.interventionTools.bee.*
+
+      include lseng.appLayer.analyticsEngine.interventionTools.interventionTools.bee with {
+          navigateTo intTools
+      }
+
+        global  style phase1
+        global  style phase2
+        global  style phase3
+    }
+
+
+    view digitalTwin of lseng.appLayer.analyticsEngine.interventionTools.digitalTwin {
+      include lseng.appLayer.analyticsEngine.interventionTools,
+              lseng.appLayer.analyticsEngine.interventionTools.digitalTwin,
+              lseng.appLayer.analyticsEngine.interventionTools.digitalTwin.*
+
+      include lseng.appLayer.analyticsEngine.interventionTools.interventionTools.digitalTwin with {
+          navigateTo intTools
+      }
+
+        global  style phase1
+        global  style phase2
+        global  style phase3
+    }
 }

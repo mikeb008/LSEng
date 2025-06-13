@@ -1,9 +1,8 @@
 model {
     
-    extend lseng.appLayer.interventionTools.lms {
-        
+    extend lseng.appLayer.analyticsEngine.interventionTools.interventionTools.lms {   
         contentDelivery = application 'Content Delivery' {
-            #lms, #longevity-interventionTools
+            #phase2, #lms, #longevity-interventionTools
             title 'Content Delivery'
             description 'Provides educational modules and materials'
             technology 'Saas -> Python'
@@ -11,7 +10,7 @@ model {
 
     
         progressTrackingLms = application 'Progress Tracking' {
-            #lms, #longevity-interventionTools
+            #phase2, #lms, #longevity-interventionTools
             title 'Progress Tracking'
             description 'Monitors user learning progress'
             technology 'Python/Java'
@@ -20,14 +19,14 @@ model {
 
     
         quizManagement = application 'Quiz Management' {
-            #lms, #longevity-interventionTools
+            #phase2, #lms, #longevity-interventionTools
             title 'Quiz Management'
             description 'Handles quizzes and assessments'
             technology 'Python/Java'
         }
     
         personalizationLms = application 'Personalization' {
-            #lms, #longevity-interventionTools
+            #phase2, #lms, #longevity-interventionTools
             title 'Personalization'
             description 'Adapts learning paths based on user data'
             technology 'Python/Java'
@@ -35,7 +34,7 @@ model {
 
     
         reportingLms = application 'Reporting' {
-            #lms, #longevity-interventionTools
+            #phase2, #lms, #longevity-interventionTools
             title 'Reporting'
             description 'Generates reports on user engagement and learning outcomes'
             technology 'Python/Java'
@@ -43,7 +42,7 @@ model {
 
     
         dataAccessLms = application 'Data Access' {
-            #lms, #longevity-interventionTools
+            #phase2, #lms, #longevity-interventionTools
             title 'Data Access'
             description 'Interacts with the Data Storage'
             technology 'Python/Java'
