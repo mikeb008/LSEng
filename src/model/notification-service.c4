@@ -3,42 +3,42 @@ model {
 	extend lseng.uiLayer.diagnosticTools.webApp.notificationService {
 
 		emailNotifications = service 'Email Notifications' {
-			#longevity-diagnosticTools, #notifications
+			#phase1, #longevity-diagnosticTools, #notifications
 			title 'Email Notifications'
 			description 'Sends email notifications to users'
 			technology 'Node.js, Email Libraries'
 		}
 
     	pushNotifications = service 'Push Notifications' {
-			#longevity-diagnosticTools, #notifications
+			#phase1, #longevity-diagnosticTools, #notifications
     		title 'Push Notifications'
     		description 'Sends push notifications to mobile devices'
     		technology 'ode.js, Push Notification Services'
     	}
 
     	smsNotifications = service 'SMS Notifications' {
-			#longevity-diagnosticTools, #notifications
+			#phase1, #longevity-diagnosticTools, #notifications
     		title 'SMS Notifications'
     		description 'Sends SMS notifications to users'
     		technology 'Node.js, SMS Gateways'
     	}
 
     	inAppNotifications = service 'In-App Notifications' {
-			#longevity-diagnosticTools, #notifications
+			#phase1, #longevity-diagnosticTools, #notifications
     		title 'In-App Notifications'
     		description 'Displays notifications within the web and mobile applications'
     		technology 'Node.js, WebSockets'
     	}
 
     	notificationTemplates = service 'Notification Template' {
-			#longevity-diagnosticTools, #notifications
+			#phase1, #longevity-diagnosticTools, #notifications
     		title 'Notification Template'
     		description 'Manages notification templates'
     		technology 'Node.js, Template Engines'
     	}
 
     	notificationScheduling = service 'Notification Scheduling' {
-			#longevity-diagnosticTools, #notifications
+			#phase1, #longevity-diagnosticTools, #notifications
     		title 'Notification Scheduling'
     		description 'Schedules notifications to be sent at specific times'
     		technology 'Node.js, Scheduling Libraries'

@@ -3,7 +3,7 @@ model {
     extend lseng.uiLayer.diagnosticTools.webApp.auth {
 
         userRegistration = application 'User Registration' {
-            #longevity-diagnosticTools
+            #phase1, #longevity-diagnosticTools
             title 'User Registration'
             description 'Handles user registration and account creation'
             technology 'Java ->  Database Interaction'
@@ -11,7 +11,7 @@ model {
         }
 
         userAuthentication = application 'User Authentication' {
-            #longevity-diagnosticTools
+            #phase1, #longevity-diagnosticTools
             title 'User Authentication'
             description 'Authenticates users and manages sessions'
             technology 'Java ->  OAuth 2.0'
@@ -19,7 +19,7 @@ model {
         }
 
         authorizationManagement = application 'Authorization Management' {
-            #longevity-diagnosticTools
+            #phase1, #longevity-diagnosticTools
             title 'Authorization Management'
             description 'Controls user access to resources'
             technology 'Java ->  Role-Based Access Control'
@@ -27,7 +27,7 @@ model {
 
     
         passwordManagement = application 'Password Management' {
-            #longevity-diagnosticTools
+            #phase1, #longevity-diagnosticTools
             title 'Password Management'
             description 'Handles password resets and changes'
             technology 'Java ->  Security Libraries'
@@ -35,14 +35,14 @@ model {
         }
 
         apiSecurity = application 'API Security' {
-            #longevity-diagnosticTools
+            #phase1, #longevity-diagnosticTools
             title 'API Security'
             description 'Secures API endpoints'
             technology 'Java ->  Security Filters'
         }
 
         userProfileManagement = application 'User Profile Management' {
-            #longevity-diagnosticTools
+            #phase1, #longevity-diagnosticTools
             title 'User Profile Management'
             description 'Manages user profile information'
             technology 'Java ->  Database Interaction'

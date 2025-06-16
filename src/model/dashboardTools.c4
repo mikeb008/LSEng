@@ -3,14 +3,14 @@ model {
 	extend lseng.appLayer.analyticsEngine.dashboardTools {
 
         dashboards = application 'Dynamic Dashboards' {
-            #phase2, #LSEngAnalyticsEngine, #dashboardTools
+            #phase1, #LSEngAnalyticsEngine, #dashboardTools
             title 'Dynamic Dashboards '
             description 'Real-time visualization of key longevity and health metrics'
             icon https://img.icons8.com/?size=100&id=92zOGOmxGkWj&format=png
 		}
 
         reporting = application 'Custom Reporting Engine' {
-            #phase2, #LSEngAnalyticsEngine, #dashboardTools
+            #phase1, #LSEngAnalyticsEngine, #dashboardTools
             title 'Custom Reporting Engine'
             description 'Stakeholder-specific reports for coaches, fund managers, etc.'
             icon https://img.icons8.com/?size=80&id=I5VKwhMWs793&format=png
@@ -24,7 +24,7 @@ model {
 		}
 
 		userInterface = component 'User Access & Role Management' {
-			#phase2, #LSEngAnalyticsEngine, #dashboardTools
+			#phase1, #LSEngAnalyticsEngine, #dashboardTools
 			title 'User Access & Role Management'
 			description '
 					Tiered access to dashboards by user role.

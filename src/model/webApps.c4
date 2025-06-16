@@ -34,7 +34,7 @@ model {
 		}
 		
   		lms = component 'LMS Integration' {
-			#phase1, #webApp, #longevity-interventionTools
+			#phase2, #webApp, #longevity-interventionTools
 			title 'LMS Integration'
 			description '
 					Displays educational content and tracks progress
@@ -44,7 +44,7 @@ model {
 		}
     
   		coaching = component 'Coaching Integration' {
-			#phase1, #webApp, #longevity-interventionTools
+			#phase2, #webApp, #longevity-interventionTools
 			title 'Coaching Integration'
 			description '
 					Enables communication with health coaches
@@ -54,7 +54,7 @@ model {
 		}
 
   		community-access = component 'Community Access' {
-			#phase1, #webApp, #longevity-interventionTools
+			#phase2, #webApp, #longevity-interventionTools
 			title 'Community Access'
 			description '
 					Provides access to community forums and groups
