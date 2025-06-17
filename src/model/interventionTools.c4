@@ -33,7 +33,7 @@ model {
         }
 
         game = component 'Gamification Engine Metrics' {
-            #phase2, #longevity-interventionTools, #LSEngAnalyticsEngine
+            #phase3, #longevity-interventionTools, #LSEngAnalyticsEngine
             title 'Gamification Engine Metrics'
             description '
                 Game mechanics-based mobile app incentivizing and sustaining healthy behaviours\n

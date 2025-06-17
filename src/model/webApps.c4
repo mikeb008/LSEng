@@ -24,7 +24,7 @@ model {
 		}
 
 		intervention-manager = component 'Intervention Management' {
-			#phase1, #webApp, #longevity-diagnosticTools
+			#phase3, #webApp, #longevity-diagnosticTools
 			title 'Intervention Management'
 			description '
 					Allows users to view and manage interventions

@@ -41,5 +41,27 @@ model {
             description 'Employs Bayesian updating to refine transition probabilities based on longitudinal and time-series'
             icon https://img.icons8.com/?size=80&id=G18h3t7UW5QW&format=png
 		}
+
+        onboarding = component 'Onboarding' {
+            #phase1, #longevity-diagnosticTools
+            title 'Onboarding'
+            description ''
+            icon https://img.icons8.com/?size=160&id=JNOv2Xlxz9K3&format=png
+        }
+
+        survey = component 'Survey' {
+            #phase1, #longevity-diagnosticTools
+            title 'Surveys'
+            description 'Collects self-reported lifestyle and health info'
+            icon https://img.icons8.com/?size=100&id=7751&format=png
+        }
+
+        hl7 = component 'HL7' {
+            #phase1, #longevity-diagnosticTools
+            title 'Hl7'
+            description 'Interfaces with medical systems to collect standardized health data'
+            icon https://images.icon-icons.com/37/PNG/96/clinical_medical_3912.png
+        }
+
     }
 }

@@ -7,7 +7,7 @@ model {
 		//gamification = container {
 			#longevity-interventionTools
 		challenge-engine = application 'Challenge Engine' {
-			#phase2, #longevity-interventionTools, #gamification
+			#phase3, #longevity-interventionTools, #gamification
 			title 'Challenge Engine'
 			icon https://img.icons8.com/?size=100&id=123495&format=png
 			description '
@@ -18,7 +18,7 @@ model {
 		}
 
 		rewardSystem = application 'Reward System' {
-			#phase2, #longevity-interventionTools, #gamification
+			#phase3, #longevity-interventionTools, #gamification
 			title 'Reward System'
 			icon https://img.icons8.com/?size=100&id=37862&format=png
 			description '
@@ -29,7 +29,7 @@ model {
 		}
 
 		leaderboard = application 'Leaderboard Management' {
-			#phase2, #longevity-interventionTools, #gamification
+			#phase3, #longevity-interventionTools, #gamification
 			title 'Leaderboard Management'
 			icon https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.U37xIJjVWWfZ3Hp-YkLlnQAAAA%26pid%3DApi&f=1&ipt=ec33fb1f42e75365c9fc43688a3c30db8e4678a20e8a24c76ab31260d99947bf&ipo=images
 			description '
@@ -40,7 +40,7 @@ model {
 		}
 
 		progress = application 'Progress Tracking' {
-			#phase2, #longevity-interventionTools, #gamification
+			#phase3, #longevity-interventionTools, #gamification
 			title 'Progress Tracking'
 			icon https://img.icons8.com/?size=100&id=7317&format=png
 			description '
@@ -51,7 +51,7 @@ model {
 		}
 		
 		personalization = application 'Personalization' {
-			#phase2, #longevity-interventionTools, #gamification
+			#phase3, #longevity-interventionTools, #gamification
 			title 'Personalization'
 			icon https://img.icons8.com/?size=160&id=SmOn2OXD9vU7&format=png
 			description '
@@ -62,7 +62,7 @@ model {
 		}
     	
 		data_access = application 'Data Access' {
-			#phase2, #longevity-interventionTools, #gamification
+			#phase3, #longevity-interventionTools, #gamification
 			title 'Data Access'
 			icon https://img.icons8.com/?size=100&id=11349&format=png
 			description '

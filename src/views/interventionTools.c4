@@ -18,7 +18,7 @@ views {
         global  style phase3
 
         style lseng.appLayer.analyticsEngine.interventionTools {
-    		color slate
+    		color indigo
 			opacity 30%
   		}
 
