@@ -55,7 +55,7 @@ views {
 
 		style element.tag = #longevity-diagnosticTools {
     		notation "Longevity Diagnostic Tools"
-    		color sky
+    		//color sky
   		}
 		
 		style element.tag = #ai-conversationalTools {
@@ -64,7 +64,7 @@ views {
   		}
 
 		group  'Longevity Diagnostic Tools' {
-			color primary
+			//color primary
     		opacity 40%
     		border solid
 			include element.tag = #longevity-interventionTools 

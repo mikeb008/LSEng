@@ -49,10 +49,10 @@ model {
 		}
 
 		uiLayer = container 'Engagement Layer' {
-			#longevity-diagnosticTools
+			#phase1, #longevity-diagnosticTools
 			
 			diagnosticTools = component 'Longevity Diagnistic Tools' {
-				#longevity-diagnosticTools
+				#phase1, #longevity-diagnosticTools
 				title 'Provides User Interface for users'
 				description 'Provides Web, Mobile & Wearables Interaface to iusers'
 				icon tech:chrome
