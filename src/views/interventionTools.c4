@@ -126,7 +126,11 @@ views {
 
         global  style phase1
         global  style phase2
-        global  style phase3       
+        global  style phase3  
+
+        style * {
+          opacity 35%
+          color indigo     
     }
 
     view bee of lseng.appLayer.analyticsEngine.interventionTools.bee {
