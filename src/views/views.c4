@@ -135,6 +135,7 @@ views {
 			//include element.tag = #mobileApp
 			
 		}
+		style lseng.uiLayer.diagnosticTools.mobileApp {opacity 40%}
 		include lseng.uiLayer.mobileApp with {
     		navigateTo mobileApps-l3
   		}
@@ -149,7 +150,7 @@ views {
 		global  style phase1
         global  style phase2
         global  style phase3
-
+		style * { opacity 30% }
 		include lseng.uiLayer.mobileApp with {
     		navigateTo mobileApp
   		}
